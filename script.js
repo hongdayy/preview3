@@ -67,3 +67,24 @@ function setupAlertButtons() {
         button.addEventListener("click", () => alert("Đăng ký thành công!"));
     });
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".mySwiper", {
+        loop: true, // Chạy vòng lặp vô hạn
+        slidesPerView: 1,
+        spaceBetween: 24,
+        autoplay: {
+            delay: 3000, // Tự động chạy sau 3 giây
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2
+            },
+            1024: {
+                slidesPerView: 3
+            }
+        }
+    });
+});
