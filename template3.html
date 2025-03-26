@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- header  -->
+    <header class="bg-white py-4 shadow-md">
+        <div class="container mx-auto flex flex-wrap justify-between items-center px-4 md:px-6">
+           
+            <img src="./image/Logo 1.png" alt="Logo" class="h-8 md:h-10">
+    
+            <!-- Nút Toggle Menu (Mobile) -->
+            <button id="menu-toggle" class="sm:hidden text-gray-700 focus:outline-none cursor-pointer">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+    
+            
+            <nav id="menu" class="hidden sm:flex flex-col sm:flex-row absolute sm:static top-16 left-0 w-full sm:w-auto bg-white shadow-md sm:shadow-none sm:bg-transparent sm:space-x-4 md:space-x-6 text-gray-700 font-medium text-sm md:text-base transition-all duration-300">
+                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Ưu đãi</a>
+                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Dịch vụ</a>
+                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Giới thiệu</a>
+                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Đội ngũ bác sĩ</a>
+                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Bảng giá</a>
+                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Thư viện</a>
+                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Liên hệ</a>
+            </nav>
+    
+           
+            <a href="tel:19001806" class="relative inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-white bg-orange-400 rounded-full shadow-lg transition-all hover:bg-orange-600 hover:shadow-xl active:scale-95 mt-4 sm:mt-0 text-sm sm:text-lg">
+                <img src="./image/Path@3x.png" alt="Phone Icon" class="w-5 sm:w-6 h-5 sm:h-6 mr-2">
+                <span class="font-semibold">Hotline: 1900 1806</span>
+            </a>
+            
+        </div>
+    </header>
+
+    <!-- banner -->
+    <section class="w-full">
+        <img src="./image/header.png" alt="Banner" class="w-full h-auto object-cover">
+    </section>
+
+<!-- GIAO DIỆN ƯU ĐÃI  -->
+    <div class="container mx-auto p-6">
+        <div class="flex flex-col items-center md:flex-row md:items-start md:pl-20">
+            <div class="md:w-1/3 p-6 text-center md:text-left">
+                <h2 class="text-2xl font-bold">Chương trình ưu đãi:</h2>
+                <p class="text-gray-600 mt-2 text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </p>
+    
+                <div class="mt-2 flex space-x-4">
+                    <button id="prevBtn" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:from-orange-400 hover:to-orange-700">
+                        ❮
+                    </button>
+                    <button id="nextBtn" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:from-orange-400 hover:to-orange-700">
+                        ❯
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Carousel wrapper -->
+            <div class="md:w-2/3 overflow-hidden relative">
+                <div id="carousel" class="flex space-x-6 transition-transform duration-500">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-64 h-80 shrink-0">
+                        <img src="/image/Rectangle 6447 (1).png" alt="i" class="w-full h-40 object-cover">
+                        <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                            <p class="text-lg font-light text-xl">Ưu đãi 50%</p>
+                            <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                            <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet...</p>
+                            <button class="register-btn w-full bg-white text-orange-500 border-2 border-orange-500 py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-orange-500 hover:text-white">
+                                Đăng ký nhận ưu đãi
+                            </button>
+                        </div>
+                    </div>
+                    
+                
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-64 h-80 shrink-0">
+                        <img src="/image/Rectangle 6447 (1).png" alt="i" class="w-full h-40 object-cover">
+                        <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                            <p class="text-lg font-light text-xl">Ưu đãi 50%</p>
+                            <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                            <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet...</p>
+                            <button class="register-btn w-full bg-white text-orange-500 border-2 border-orange-500 py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-orange-500 hover:text-white">
+                                Đăng ký nhận ưu đãi
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-64 h-80 shrink-0">
+                        <img src="/image/Rectangle 6447 (1).png" alt="i" class="w-full h-40 object-cover">
+                        <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                            <p class="text-lg font-light text-xl">Ưu đãi 50%</p>
+                            <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                            <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet...</p>
+                            <button class="register-btn w-full bg-white text-orange-500 border-2 border-orange-500 py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-orange-500 hover:text-white">
+                                Đăng ký nhận ưu đãi
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-64 h-80 shrink-0">
+                        <img src="/image/Rectangle 6447 (1).png" alt="i" class="w-full h-40 object-cover">
+                        <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                            <p class="text-lg font-light text-xl">Ưu đãi 50%</p>
+                            <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                            <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet...</p>
+                            <button class="register-btn w-full bg-white text-orange-500 border-2 border-orange-500 py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-orange-500 hover:text-white">
+                                Đăng ký nhận ưu đãi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- DỊCH VỤ THAI SẢN  -->
+    <div class="flex items-center justify-center p-8">
+        <div class="flex flex-col md:flex-row bg-white rounded-lg max-w-5xl  overflow-hidden">
+   
+            <div class="w-full md:w-1/2">
+                <img src="./image/Rectangle 6725.png" alt=""
+                    class="w-full h-64 md:h-full object-cover rounded-lg">
+            </div>
+    
+           
+            <div class="w-full md:w-1/2 p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Dịch vụ thai sản trọn gói</h2>
+                <p class="text-gray-500 text-sm mb-4">
+                    Mang thai và sinh nở là một hành trình vô cùng kỳ diệu nhưng cũng lắm mệt mỏi, áp lực, thậm chí là nguy hiểm. 
+                    Thấu hiểu điều đó, dịch vụ thai sản trọn gói Phương Đông mang đến trải nghiệm nhẹ nhàng, an tâm cho mẹ bầu.
+                </p>
+    
+                <ul class="space-y-2">
+                    <li class="flex items-center text-gray-700 odd:pl-4">
+                        <img class="mr-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
+                        <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <img class="mr-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
+                        <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
+                    </li>
+                    <li class="flex items-center text-gray-700 odd:pl-4">
+                        <img class="mr-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
+                        <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <img class="mr-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
+                        <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
+                    </li>
+                    <li class="flex items-center text-gray-700 odd:pl-4">
+                        <img class="mr-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
+                        <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
+                    </li>
+                </ul>
+                
+    
+                <!-- Nút Liên Hệ -->
+                <a href="tel:19001806" class="relative inline-flex items-center px-4 sm:px-5 py-1 sm:py-2 text-white bg-orange-400 rounded-full shadow-lg transition-all hover:bg-orange-500 hover:shadow-xl active:scale-95  mt-10 text-sm">
+                    Liên hệ
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- GIAO DIỆN BẢNG GIÁ  -->
+
+
+
+
+
+    <!-- GIAO DIỆN TRỌN GÓI  -->
+    <div class="relative w-full max-w-5xl mx-auto mt-10">
+
+  
+        <div class="relative">
+          <img 
+            src="./image//Group 9321.png" 
+            alt="" 
+            class=" max-h-96 object-cover rounded-3xl"
+          >
+         
+          <div class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-6 bg-white shadow-lg rounded-2xl p-6 max-w-md">
+            <h2 class="text-2xl font-bold text-gray-800">
+              Bệnh viện Phương Đông tiên phong trong dịch vụ thai sản trọn gói
+            </h2>
+            <p class="text-gray-600 mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              tale tincidunt tortor lobortis pretium nulla quis sem nullam rhoncus.
+              Ornare et dui sit massa. Volutpat porta leo pulvinar adipiscing gestas
+              metus.
+            </p>
+            <button class="mr-6 register-btn w-full bg-white text-orange-500 border-2 border-orange-500 py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-orange-500 hover:text-white">
+                Đăng ký tư vấn
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    
+
+
+      
+
+    
+      
+    
+    
+            
+
+
+
+            
+        </div>
+    </div>
+    
+
+                    
+                
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

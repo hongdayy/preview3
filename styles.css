@@ -1,0 +1,65 @@
+
+/* HEADER  */
+/* Menu mặc định - Chỉ ẩn khi màn hình nhỏ */
+#menu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Khi menu mở trên mobile */
+#menu.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mặc định menu hiển thị trên màn hình lớn */
+@media (min-width: 641px) {
+    #menu {
+        display: flex !important; /* Đảm bảo luôn hiển thị */
+        position: static;
+        width: auto;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    #menu a {
+        display: inline-block;
+        padding: 0 10px;
+    }
+}
+
+/* Khi màn hình nhỏ, menu có hiệu ứng popup */
+@media (max-width: 640px) {  
+    #menu {
+        display: none;
+        width: 50%; 
+        left: 50%;
+        position: absolute;
+        top: 60px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    #menu.active {
+        display: block;
+    }
+
+    #menu a {
+        display: block;
+        padding: 10px 15px;
+        text-align: center;
+    }
+}
+
+
+/* GIAO DIỆN ƯU ĐÃI  */
+.grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 24px; /* Khoảng cách giữa các khối */
+}
