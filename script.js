@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     setupMenuToggle();
-    setupCarousel();
     setupAlertButtons();
+    setupSwiper();
+    setupVideoClick();
 });
 
-// Toggle menu
+// ✅ Toggle menu
 function setupMenuToggle() {
     const menuToggle = document.getElementById("menu-toggle");
     const menu = document.getElementById("menu");
@@ -14,77 +15,56 @@ function setupMenuToggle() {
     }
 }
 
-// Cài đặt carousel
-function setupCarousel() {
-    const container = document.getElementById("carousel");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-    const items = document.querySelectorAll("#carousel > div");
-    
-    if (!container || !prevBtn || !nextBtn || items.length === 0) return;
-
-    let itemWidth = items[0].offsetWidth + 24;
-    let visibleItems = getVisibleItems();
-    let currentIndex = 0;
-
-    function updateSlider() {
-        container.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
-    }
-
-    nextBtn.addEventListener("click", function () {
-        if (currentIndex < items.length - visibleItems) {
-            currentIndex++;
-            updateSlider();
+// ✅ Cài đặt Swiper (Giữ nguyên)
+function setupSwiper() {
+    new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 8,
+        allowTouchMove: false,
+        autoplay: false,
+        speed: 500,
+        navigation: {
+            nextEl: "#nextBtn",
+            prevEl: "#prevBtn",
+        },
+        breakpoints: {
+            768: { slidesPerView: 2, spaceBetween: 12 },
+            1024: { slidesPerView: 3, spaceBetween: 16 }
         }
     });
-
-    prevBtn.addEventListener("click", function () {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateSlider();
-        }
-    });
-
-    function getVisibleItems() {
-        if (window.innerWidth < 768) return 1;
-        if (window.innerWidth < 1024) return 2;
-        return 3;
-    }
-
-    function handleResize() {
-        visibleItems = getVisibleItems();
-        itemWidth = items[0].offsetWidth + 24;
-        updateSlider();
-    }
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
 }
 
-// Hiển thị thông báo khi nhấn nút đăng ký
+// ✅ Hiển thị thông báo khi nhấn nút đăng ký
 function setupAlertButtons() {
     document.querySelectorAll(".register-btn").forEach(button => {
         button.addEventListener("click", () => alert("Đăng ký thành công!"));
     });
 }
 
+// ✅ Xử lý khi bấm vào ảnh mở YouTube
+function setupVideoClick() {
+    const videoIcon = document.getElementById("videoIcon");
+    const doctorImage = document.querySelector("img[alt='Bác sĩ tư vấn']"); // Ảnh bsigp.png
 
-document.addEventListener("DOMContentLoaded", function () {
-    new Swiper(".mySwiper", {
-        loop: true, // Chạy vòng lặp vô hạn
-        slidesPerView: 1,
-        spaceBetween: 24,
-        autoplay: {
-            delay: 3000, // Tự động chạy sau 3 giây
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 2
-            },
-            1024: {
-                slidesPerView: 3
-            }
-        }
-    });
-});
+    function openVideo() {
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+    }
+
+    if (videoIcon) {
+        videoIcon.addEventListener("click", function (event) {
+            event.stopPropagation();
+            openVideo();
+        });
+    } else {
+        console.error("❌ Không tìm thấy phần tử có ID 'videoIcon'");
+    }
+
+    if (doctorImage) {
+        doctorImage.addEventListener("click", function () {
+            openVideo();
+        });
+    } else {
+        console.error("❌ Không tìm thấy ảnh bác sĩ");
+    }
+}

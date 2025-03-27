@@ -67,3 +67,27 @@ body {
     scroll-behavior: smooth;
     gap: 24px; /* Khoảng cách giữa các khối */
 }
+
+/* CSS VCUAR MODAL  */
+#doctorModal {
+    display: none; /* Mặc định ẩn modal */
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    justify-content: center;
+    align-items: center;
+    z-index: 50; /* Đảm bảo modal ở trên cùng */
+}
+
+
+#doctorModal .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
