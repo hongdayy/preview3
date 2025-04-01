@@ -1,0 +1,77 @@
+
+#mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #ff7f50;
+  z-index: 10;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  transform: translateX(100%);
+}
+
+
+
+#mobile-menu.show {
+  display: block;
+  transform: translateX(0);
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff; 
+ 
+  
+  cursor: pointer;
+}
+#mobile-menu .menu-content nav ul li a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff; /* Màu chữ trắng */
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Đường viền mờ cho các mục */
+}
+#mobile-menu .menu-content nav ul li a:hover {
+  background-color: #ff4500; 
+  color: #fff; 
+}
+#mobile-menu .menu-content nav ul li {
+  margin-top: 20px;  /* Đẩy các mục xuống dưới */
+}
+
+
+#menu-toggle.close svg {
+  transform: rotate(90deg);
+}
+
+#sliderWrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#slider {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  min-width: 280px;
+
+}
+.container {
+  margin: 0 auto;
+  padding-left: 15px; 
+  padding-right: 15px; 
+}
+
+
+

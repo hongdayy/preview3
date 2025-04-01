@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,572 +13,764 @@
 
 
 </head>
+
 <body>
 
     <!-- header  -->
-    <header class="bg-white py-4 shadow-md">
-        <div class="container mx-auto flex flex-wrap justify-between items-center px-4 md:px-6">
-           
-            <img src="./image/Logo 1.png" alt="Logo" class="h-8 md:h-10">
-    
-            <!-- Nút Toggle Menu (Mobile) -->
-            <button id="menu-toggle" class="sm:hidden text-gray-700 focus:outline-none cursor-pointer">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-    
-            
-            <nav id="menu" class="hidden sm:flex flex-col sm:flex-row absolute sm:static top-16 left-0 w-full sm:w-auto bg-white shadow-md sm:shadow-none sm:bg-transparent sm:space-x-4 md:space-x-6 text-gray-700 font-medium text-sm md:text-base transition-all duration-300">
-                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Ưu đãi</a>
-                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Dịch vụ</a>
-                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Giới thiệu</a>
-                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Đội ngũ bác sĩ</a>
-                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Bảng giá</a>
-                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Thư viện</a>
-                <a href="#" class="block sm:inline-block py-2 px-4 hover:text-blue-500">Liên hệ</a>
+    <div class="container">
+        <header class="flex justify-between items-center px-4 py-4 bg-white shadow-md">
+            <div class="logo">
+              <img src="../image/Logo 1.png" alt="Phương Đông" class="h-12" />
+            </div>
+        
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6 text-gray-700">
+              <a href="#" class="hover:text-blue-500 font-bold">Ưu đãi</a>
+              <a href="#" class="hover:text-blue-500 font-bold">Dịch vụ</a>
+              <a href="#" class="hover:text-blue-500 font-bold">Giới thiệu</a>
+              <a href="#" class="hover:text-blue-500 font-bold">Đội ngũ bác sĩ</a>
+              <a href="#" class="hover:text-blue-500 font-bold">Bảng giá</a>
+              <a href="#" class="hover:text-blue-500 font-bold">Thư viện</a>
+              <a href="#" class="hover:text-blue-500 font-bold">Liên hệ</a>
             </nav>
-    
-           
-            <a href="tel:19001806" class="relative inline-flex items-center px-2 sm:px-3 py-1 sm:py-1.5 text-white rounded-full bg-gradient-to-b from-orange-300 to-orange-500 shadow-lg text-sm sm:text-base transition-all duration-300 hover:from-orange-400 hover:to-orange-700 whitespace-nowrap">
-                <img src="./image/Path@3x.png" alt="Phone Icon" class="w-3 sm:w-4 h-3 sm:h-4 mr-1">
-                <span class="font-semibold">Hotline: 1900 1806</span>
-            </a>
-            
-            
+        
+            <!-- Hotline -->
+            <div class="hidden md:flex items-center">
+              <a href="tel:19001806" class="text-white bg-gradient-to-b from-[#FFB469] to-[#E57709] px-4 py-2 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 hover:brightness-110 hover:scale-105">
+                <img src="../image/Path@3x.png" alt="Phone Icon" class="w-5 h-5" />
+                Hotline: 1900 1806
+              </a>
+            </div>
+        
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+              <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                <svg class="h-6 w-6" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"/>
+                </svg>
+              </button>
+            </div>
+          </header>
+        
+          <!-- Mobile Navigation -->
+          <div id="mobile-menu">
+            <div class="close-btn" id="close-btn">Đóng</div>
+            <div class="menu-content ">
+              <nav>
+                <ul class="space-y-2 ">
+                  <li><a href="#" class="block py-2 px-4 hover:bg-gray-200">Ưu đãi</a></li>
+                  <li><a href="#" class="block py-2 px-4 hover:bg-gray-200">Dịch vụ</a></li>
+                  <li><a href="#" class="block py-2 px-4 hover:bg-gray-200">Giới thiệu</a></li>
+                  <li><a href="#" class="block py-2 px-4 hover:bg-gray-200">Đội ngũ bác sĩ</a></li>
+                  <li><a href="#" class="block py-2 px-4 hover:bg-gray-200">Bảng giá</a></li>
+                  <li><a href="#" class="block py-2 px-4 hover:bg-gray-200">Thư viện</a></li>
+                  <li><a href="#" class="block py-2 px-4 hover:bg-gray-200">Liên hệ</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        
+          <!-- Hotline Button -->
+          <a href="tel:19001806" class="fixed bottom-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-lg text-white text-xl transition-all duration-300 hover:scale-110 hover:from-[#E57709] hover:to-[#FFB469] md:hidden">
+            <img src="../image/Path@3x.png" alt="Phone Icon" class="w-5 h-5" />
+          </a>
+        </div>
+    </div>
 
-        </div>
-            
-        </div>
-    </header>
+
+
+
+
 
     <!-- banner -->
-    <section class="w-full">
-        <img src="./image/header.png" alt="Banner" class="w-full h-auto object-cover">
-    </section>
+    <img src="./image/Screenshot_12 1.png" alt="">
 
-    <div class="container mx-auto p-6">
-        <div class="flex flex-col items-center md:flex-row md:items-start md:pl-20">
-            <div class="md:w-1/3 p-6 text-center md:text-left">
-                <h2 class="text-2xl font-bold">Chương trình ưu đãi:</h2>
+    <div class="container mx-auto  pt-10">
+        <div class="flex flex-col items-center md:flex-row md:items-start">
+            <!-- Phần văn bản có padding -->
+            <div class="w-full md:w-1/3 px-6 text-center md:text-left">
+                <h2 class="text-2xl font-semibold leading-[44px] flex items-center">Chương trình ưu đãi:</h2>
+
                 <p class="text-gray-600 mt-2 text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit lis iaculis ac felis porta.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit lis <br> iaculis ac felis porta. Vulputate
+                    tellus sapien pat sit ipsum <br> molestie pharetran da volutpat semper.
                 </p>
-    
+
                 <!-- Nút điều hướng Swiper -->
                 <div class="mt-4 flex justify-center md:justify-start space-x-4">
-                    <button id="prevBtn" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:from-orange-400 hover:to-orange-700">
+                    <button id="prevBtn"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:scale-110 hover:from-orange-400 hover:to-orange-700">
                         ❮
                     </button>
-                    <button id="nextBtn" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:from-orange-400 hover:to-orange-700">
+                    <button id="nextBtn"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:scale-110 hover:from-orange-400 hover:to-orange-700">
                         ❯
                     </button>
                 </div>
             </div>
-    
-            <!-- Swiper Carousel -->
-            <div class="md:w-2/3 w-full">
+
+            <!-- Swiper Carousel (Không có padding hai bên) -->
+            <div class="md:w-2/3 w-full h-auto pt-10">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <!-- Dữ liệu mẫu -->
-                        <div class="swiper-slide bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-full max-w-xs mx-auto">
-                            <img src="./image/Rectangle 6447 (1).png" alt="i" class="w-full h-40 object-cover">
-                            <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                        <!-- Swiper Slide -->
+                        <div
+                            class="swiper-slide bg-white rounded-xl shadow-lg flex flex-col w-full max-w-xs mx-auto transition-all duration-300 hover:scale-105">
+                            <img src="./image/Rectangle 6447.png" alt="i"
+                                class="w-full h-auto object-contain rounded-tl-[20px]">
+                            <div
+                                class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
                                 <p class="text-lg font-light">Ưu đãi 50%</p>
                                 <p class="text-sm font-bold">Gói khám thai tổng quát</p>
                                 <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                                <button class="register-btn w-full bg-white text-orange-500 border-2 border-orange-500 py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-gradient-to-b hover:from-orange-300 hover:to-orange-600 hover:text-white hover:border-orange-600 shadow-lg">
+                                <button
+                                    class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:scale-105 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                                     Đăng ký nhận ưu đãi
                                 </button>
                             </div>
                         </div>
-    
-                        <div class="swiper-slide bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-full max-w-xs mx-auto">
-                            <img src="./image/Rectangle 6447 (1).png" alt="i" class="w-full h-40 object-cover">
-                            <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                                <p class="text-lg font-light">Ưu đãi 50%</p>
-                                <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                                <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                                <button class="register-btn w-full bg-white text-orange-500 border-2 border-orange-500 py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-gradient-to-b hover:from-orange-300 hover:to-orange-600 hover:text-white hover:border-orange-600 shadow-lg">
-                                    Đăng ký nhận ưu đãi
-                                </button>
-                            </div>
-                        </div>
-    
 
-                        <div class="swiper-slide bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-full max-w-xs mx-auto">
-                            <img src="./image/Rectangle 6447 (1).png" alt="i" class="w-full h-40 object-cover">
-                            <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                        <div
+                            class="swiper-slide bg-white rounded-xl shadow-lg flex flex-col w-full max-w-xs mx-auto transition-all duration-300 hover:scale-105">
+                            <img src="./image/Rectangle 6447.png" alt="i"
+                                class="w-full h-auto object-contain rounded-tl-[20px]">
+                            <div
+                                class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
                                 <p class="text-lg font-light">Ưu đãi 50%</p>
                                 <p class="text-sm font-bold">Gói khám thai tổng quát</p>
                                 <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                                <button class="register-btn w-full bg-white text-orange-500 border-2 border-orange-500 py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-gradient-to-b hover:from-orange-300 hover:to-orange-600 hover:text-white hover:border-orange-600 shadow-lg">
+                                <button
+                                    class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:scale-105 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                                     Đăng ký nhận ưu đãi
                                 </button>
                             </div>
                         </div>
-    
 
-                        <div class="swiper-slide bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-full max-w-xs mx-auto">
-                            <img src="./image/Rectangle 6447 (1).png" alt="i" class="w-full h-40 object-cover">
-                            <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                        <div
+                            class="swiper-slide bg-white rounded-xl shadow-lg flex flex-col w-full max-w-xs mx-auto transition-all duration-300 hover:scale-105">
+                            <img src="./image/Rectangle 6447.png" alt="i"
+                                class="w-full h-auto object-contain rounded-tl-[20px]">
+                            <div
+                                class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
                                 <p class="text-lg font-light">Ưu đãi 50%</p>
                                 <p class="text-sm font-bold">Gói khám thai tổng quát</p>
                                 <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                                <button class="register-btn w-full bg-white text-orange-500 border-2 border-orange-500 py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-gradient-to-b hover:from-orange-300 hover:to-orange-600 hover:text-white hover:border-orange-600 shadow-lg">
+                                <button
+                                    class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:scale-105 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                                     Đăng ký nhận ưu đãi
                                 </button>
                             </div>
                         </div>
-    
 
-                        <div class="swiper-slide bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-full max-w-xs mx-auto">
-                            <img src="./image/Rectangle 6447 (1).png" alt="i" class="w-full h-40 object-cover">
-                            <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                        <div
+                            class="swiper-slide bg-white rounded-xl shadow-lg flex flex-col w-full max-w-xs mx-auto transition-all duration-300 hover:scale-105">
+                            <img src="./image/Rectangle 6447.png" alt="i"
+                                class="w-full h-auto object-contain rounded-tl-[20px]">
+                            <div
+                                class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
                                 <p class="text-lg font-light">Ưu đãi 50%</p>
                                 <p class="text-sm font-bold">Gói khám thai tổng quát</p>
                                 <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                                <button class="register-btn w-full bg-white text-orange-500 border-2 border-orange-500 py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-gradient-to-b hover:from-orange-300 hover:to-orange-600 hover:text-white hover:border-orange-600 shadow-lg">
+                                <button
+                                    class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:scale-105 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                                     Đăng ký nhận ưu đãi
                                 </button>
                             </div>
                         </div>
-    
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
 
     <!-- DỊCH VỤ THAI SẢN  -->
-    <div class="flex items-center justify-center p-8">
-        <div class="flex flex-col md:flex-row bg-white rounded-lg max-w-5xl  overflow-hidden">
-   
+    <div class="container  mx-auto px-6 md:px-10 pt-10">
+        <div class="flex flex-col items-center md:flex-row md:items-start mt-6">
             <div class="w-full md:w-1/2">
-                <img src="./image/Rectangle 6725.png" alt=""
-                    class="w-full h-64 md:h-full object-cover rounded-lg">
+                <img src="./image/Rectangle 6725.png" alt="" class="w-full md:h-full object-cover">
             </div>
-    
-           
             <div class="w-full md:w-1/2 p-6">
                 <h2 class="text-2xl font-bold text-gray-800 mb-4">Dịch vụ thai sản trọn gói</h2>
                 <p class="text-gray-500 text-sm mb-4">
-                    Mang thai và sinh nở là một hành trình vô cùng kỳ diệu nhưng cũng lắm mệt mỏi, áp lực, thậm chí là nguy hiểm. 
-                    Thấu hiểu điều đó, dịch vụ thai sản trọn gói Phương Đông mang đến trải nghiệm nhẹ nhàng, an tâm cho mẹ bầu.
+                    Mang thai và sinh nở là một hành trình vô cùng kỳ diệu nhưng cũng lắm mệt mỏi, áp lực, <br> thậm chí
+                    là nguy hiểm. Thấu hiểu nỗi niềm đó, dịch vụ thai sản trọn gói Phương Đông nhằm <br> mang tới trải
+                    nghiệm nhẹ nhàng, an tâm cho người mẹ trong suốt thai kỳ, ngày vượt cạn <br> đến sau sinh và sự chăm
+                    sóc toàn diện với em bé ngay từ giây phút đầu tiên chào đời.
                 </p>
-    
+
                 <ul class="space-y-2">
-                    <li class="flex items-center text-gray-700 odd:pl-4">
-                        <img class="mr-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
+                    <li class="flex items-center text-gray-700">
+                        <img class=" mr-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
+                        <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <img class="mr-2 ml-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
                         <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
                     </li>
                     <li class="flex items-center text-gray-700">
                         <img class="mr-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
                         <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
                     </li>
-                    <li class="flex items-center text-gray-700 odd:pl-4">
-                        <img class="mr-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
+                    <li class="flex items-center text-gray-700">
+                        <img class="mr-2 ml-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
                         <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
                     </li>
                     <li class="flex items-center text-gray-700">
                         <img class="mr-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
                         <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
                     </li>
-                    <li class="flex items-center text-gray-700 odd:pl-4">
+                    <li class="flex items-center text-gray-700">
+                        <img class="mr-2 ml-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
+                        <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
+                    </li>
+                    <li class="flex items-center text-gray-700">
                         <img class="mr-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
+                        <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <img class="mr-2 ml-2 w-2 flex items-center" src="./image/Ellipse 1133.png" alt="">
                         <b class="text-sm">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</b>
                     </li>
                 </ul>
-                
-    
+
+
                 <!-- Nút Liên Hệ -->
-                <a href="tel:19001806" class="relative inline-flex items-center px-4 sm:px-5 py-1 sm:py-2 text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg rounded-full transition-all hover:from-orange-400 hover:to-orange-700 active:scale-95  mt-10 text-sm">
+                <a href="tel:19001806"
+                    class="relative inline-flex items-center px-4 sm:px-5 py-1 sm:py-2 text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg rounded-full transition-all hover:from-orange-400 hover:to-orange-700 active:scale-95  mt-10 text-sm">
                     Liên hệ
                 </a>
-               
-                 
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+<section class="bg-red-500">
+    <div class="container">
+
+    </div>
+</section>
+
+
+
+
+    <div class="container mx-auto p-6 pt-10">
+        <div class="flex flex-col items-center md:flex-row md:items-start md:pl-20 w-full  ">
+            <div class="font-sans text-center p-4 w-full">
+                <h2 class="text-2xl font-semibold my-4">Bảng giá các dịch vụ khám và chữa bệnh:</h2>
+                <p class="italic text-sm">Ghi chú: Lorem ipsum dolor sit amet, consectetur adipiscing elit lis iaculis
+                    ac felis</p>
+
+                <div class="overflow-auto mt-4 max-h-[500px] p-0">
+                    <table class="min-w-full w-[95%] border-collapse shadow-lg text-xs sm:text-sm md:text-base">
+
+                        <thead>
+                            <tr>
+                                <th class="border p-2 md:p-3 bg-gradient-to-r from-[#50C577] to-[#50C577] text-white">
+                                    STT</th>
+                                <th class="border p-2 md:p-3 bg-gradient-to-r from-[#50C577] to-[#50C577] text-white">
+                                    TÊN DỊCH VỤ</th>
+                                <th class="border p-2 md:p-3 bg-gradient-to-r from-[#50C577] to-[#2DBEFC] text-white"
+                                    colspan="2">GIÁ DỊCH VỤ DÀNH CHO KHÁCH HÀNG CÓ QUỐC TỊCH</th>
+                            </tr>
+                            <tr>
+                                <th class="border p-2"></th>
+                                <th class="border p-2"></th>
+                                <th class="border p-2 bg-gradient-to-r from-[#50C577] to-[#2DBEFC] text-white">Việt Nam
+                                </th>
+                                <th class="border p-2 bg-gradient-to-r from-[#50C577] to-[#2DBEFC] text-white">Nước
+                                    ngoài</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border p-2 md:p-3">1</td>
+                                <td class="border p-2 md:p-3 break-words">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                                </td>
+                                <td class="border p-2 md:p-3">200,000/giờ</td>
+                                <td class="border p-2 md:p-3">400,000/giờ</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2 md:p-3">2</td>
+                                <td class="border p-2 md:p-3">Cắt chỉ</td>
+                                <td class="border p-2 md:p-3">300,000/lần</td>
+                                <td class="border p-2 md:p-3">300,000/lần</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2 md:p-3">3</td>
+                                <td class="border p-2 md:p-3">Phương tiện bảo hộ lấy mẫu</td>
+                                <td class="border p-2 md:p-3">300,000/lần</td>
+                                <td class="border p-2 md:p-3">300,000/lần</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2 md:p-3">4</td>
+                                <td class="border p-2 md:p-3">Tắm bé tại nhà</td>
+                                <td class="border p-2 md:p-3">300,000/lần</td>
+                                <td class="border p-2 md:p-3">300,000/lần</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2 md:p-3">5</td>
+                                <td class="border p-2 md:p-3">Dẫn lưu nước tiểu bàng quang</td>
+                                <td class="border p-2 md:p-3">300,000/lần</td>
+                                <td class="border p-2 md:p-3">300,000/lần</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2 md:p-3">6</td>
+                                <td class="border p-2 md:p-3">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
+                                <td class="border p-2 md:p-3">200,000/giờ</td>
+                                <td class="border p-2 md:p-3">400,000/giờ</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2 md:p-3">7</td>
+                                <td class="border p-2 md:p-3">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
+                                <td class="border p-2 md:p-3">200,000/giờ</td>
+                                <td class="border p-2 md:p-3">400,000/giờ</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2 md:p-3">8</td>
+                                <td class="border p-2 md:p-3">Xét nghiệm tại nhà</td>
+                                <td class="border p-2 md:p-3">Theo giá niêm yết tại BVĐK Phương Đông</td>
+                                <td class="border p-2 md:p-3"></td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2 md:p-3">9</td>
+                                <td class="border p-2 md:p-3">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
+                                <td class="border p-2 md:p-3">200,000/giờ</td>
+                                <td class="border p-2 md:p-3">400,000/giờ</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2 md:p-3">10</td>
+                                <td class="border p-2 md:p-3">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
+                                <td class="border p-2 md:p-3">200,000/giờ</td>
+                                <td class="border p-2 md:p-3">400,000/giờ</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2 md:p-3">11</td>
+                                <td class="border p-2 md:p-3">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
+                                <td class="border p-2 md:p-3">200,000/giờ</td>
+                                <td class="border p-2 md:p-3">400,000/giờ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
 
 
 
-    <!-- GIAO DIỆN BẢNG GIÁ  -->
-    <div class="font-sans text-center">
-        <h2 class="text-2xl font-semibold my-6">Bảng giá các dịch vụ khám và chữa bệnh:</h2>
-        <p class="italic"><i>Ghi chú: Lorem ipsum dolor sit amet, consectetur adipiscing elit lis iaculis ac felis</i></p>
-        <table class="w-4/5 mx-auto my-6 border-collapse shadow-lg">
-            <thead>
-                <tr>
-                    <th class="border p-4 bg-gradient-to-r from-[#50C577] to-[#C4EACE] to-[#B5E8FD]  text-white">STT</th>
-                    <th class="border p-4 bg-gradient-to-r from-[#50C577] to-[#C4EACE] to-[#B5E8FD]  text-white">TÊN DỊCH VỤ</th>
-                    <th class="border p-4 border p-4 bg-gradient-to-r from-[#50C577] to-[#C4EACE] to-[#B5E8FD] " colspan="2">GIÁ DỊCH VỤ DÀNH CHO KHÁCH HÀNG CÓ QUỐC TỊCH</th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th class="border p-4 bg-gradient-to-r from-[#50C577] to-[#C4EACE] to-[#B5E8FD]  text-white">Việt Nam</th>
-                    <th class="bborder p-4 bg-gradient-to-r from-[#50C577] to-[#C4EACE] to-[#B5E8FD]  text-white">Nước ngoài</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="border p-4">1</td><td class="border p-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td><td class="border p-4">200,000/giờ</td><td class="border p-4">400,000/giờ</td></tr>
-                <tr><td class="border p-4">2</td><td class="border p-4">Cắt chỉ</td><td class="border p-4">300,000/lần</td><td class="border p-4">300,000/lần</td></tr>
-                <tr><td class="border p-4">3</td><td class="border p-4">Phương tiện bảo hộ lấy mẫu</td><td class="border p-4">300,000/lần</td><td class="border p-4">300,000/lần</td></tr>
-                <tr><td class="border p-4">4</td><td class="border p-4">Tắm bé tại nhà</td><td class="border p-4">300,000/lần</td><td class="border p-4">300,000/lần</td></tr>
-                <tr><td class="border p-4">5</td><td class="border p-4">Dẫn lưu nước tiểu bàng quang</td><td class="border p-4">300,000/lần</td><td class="border p-4">300,000/lần</td></tr>
-                <tr><td class="border p-4">6</td><td class="border p-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td><td class="border p-4">200,000/giờ</td><td class="border p-4">400,000/giờ</td></tr>
-                <tr><td class="border p-4">7</td><td class="border p-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td><td class="border p-4">200,000/giờ</td><td class="border p-4">400,000/giờ</td></tr>
-                <tr><td class="border p-4">8</td><td class="border p-4">Xét nghiệm tại nhà</td><td class="border p-4">Theo giá niêm yết tại BVĐK Phương Đông</td><td class="border p-4"></td></tr>
-                <tr><td class="border p-4">9</td><td class="border p-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td><td class="border p-4">200,000/giờ</td><td class="border p-4">400,000/giờ</td></tr>
-                <tr><td class="border p-4">10</td><td class="border p-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td><td class="border p-4">200,000/giờ</td><td class="border p-4">400,000/giờ</td></tr>
-                <tr><td class="border p-4">11</td><td class="border p-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td><td class="border p-4">200,000/giờ</td><td class="border p-4">400,000/giờ</td></tr>
-            </tbody>
-        </table>
+    <!-- DỊCH VỤ THAI SẢN  -->
+
+    <div class="container mx-auto p-6 pt-10">
+        <div class="flex flex-col items-center md:flex-row md:items-start md:pl-20 relative">
+            <div class="relative">
+                <img src="./image/Group 9321.png" alt=""
+                    class="max-h-96 object-cover rounded-tr-[20px] w-full md:w-auto">
+                <div class="md:absolute md:top-1/2 md:right-[-200px] md:transform md:-translate-y-1/2 
+                        sm:right-[-50px] right-0 bg-white shadow-lg rounded-2xl p-6 
+                        max-w-lg sm:max-w-md w-[500px] sm:w-full px-4 sm:px-6">
+                    <h2 class="text-2xl font-bold text-gray-800">
+                        Bệnh viện Phương Đông tiên phong trong dịch vụ thai sản trọn gói
+                    </h2>
+                    <p class="text-gray-600 mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        tale tincidunt tortor lobortis pretium nulla quis sem nullam rhoncus.
+                        Ornare et dui sit massa. Volutpat porta leo pulvinar adipiscing gestas
+                        metus.
+                    </p>
+                    <button class="register-btn relative inline-flex items-center px-4 sm:px-5 py-1 sm:py-2 
+                                text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg 
+                                rounded-full transition-all hover:from-orange-400 hover:to-orange-700 
+                                active:scale-95 mt-10 text-sm">
+                        Đăng ký tư vấn
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
 
 
 
 
-    <!-- GIAO DIỆN TRỌN GÓI  -->
-    <div class="relative w-full max-w-5xl mx-auto mt-10">
-
-  
-        <div class="relative">
-          <img 
-            src="./image//Group 9321.png" 
-            alt="" 
-            class=" max-h-96 object-cover rounded-tr-[20px]"
-          >
-          
-         
-          <div class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-6 bg-white shadow-lg rounded-2xl p-6 max-w-md">
-            <h2 class="text-2xl font-bold text-gray-800">
-              Bệnh viện Phương Đông tiên phong trong dịch vụ thai sản trọn gói
-            </h2>
-            <p class="text-gray-600 mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              tale tincidunt tortor lobortis pretium nulla quis sem nullam rhoncus.
-              Ornare et dui sit massa. Volutpat porta leo pulvinar adipiscing gestas
-              metus.
-            </p>
-            <button class="register-btn relative inline-flex items-center px-4 sm:px-5 py-1 sm:py-2 text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg rounded-full transition-all hover:from-orange-400 hover:to-orange-700 active:scale-95  mt-10 text-sm">
-                Đăng ký tư vấn
-            </button>
-            
-          </div>
-        </div>
-      </div>
 
 
 
-      <!-- GIAO DIỆN CSVC  -->
+
+
+
+
+
+
+
+
+    <!-- GIAO DIỆN CSVC  -->
     <!-- Giao diện trang thiết bị -->
-<div class="container mx-auto max-w-screen-xl py-10 px-5">
-    <div class="flex flex-col md:flex-row justify-between items-center mt-10 md:mt-20">
-        <h2 class="text-2xl font-bold text-gray-800 text-center md:text-left">
-            Hình ảnh về cơ sở vật chất, trang thiết bị
-        </h2>
-        <div class="flex space-x-2 mt-4 md:mt-0">
-            <button id="prevBtn" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:from-orange-400 hover:to-orange-700">
-                ❮
+    <div class="container mx-auto max-w-screen-xl  px-5 ">
+        <div class="flex flex-col md:flex-row justify-between items-center  md:mt-20">
+            <h2 class="text-2xl font-bold text-gray-800 text-center md:text-left">
+                Hình ảnh về cơ sở vật chất, trang thiết bị
+            </h2>
+            <div class="flex space-x-2 mt-4 md:mt-0">
+                <button id="prevBtn"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:from-orange-400 hover:to-orange-700">
+                    ❮
+                </button>
+                <button id="nextBtn"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:from-orange-400 hover:to-orange-700">
+                    ❯
+                </button>
+            </div>
+        </div>
+
+        <!-- SwiperJS Slider -->
+        <div class="swiper mySwiper mt-10"> <!-- Thêm khoảng cách giữa tiêu đề và Swiper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./image/Rectangle 6455.png" alt="Equipment 1"
+                        class="w-full object-cover rounded-lg"></div>
+                <div class="swiper-slide"><img src="./image/Rectangle 6456.png" alt="Equipment 2"
+                        class="w-full object-cover rounded-lg"></div>
+                <div class="swiper-slide"><img src="./image/Rectangle 6455.png" alt="Equipment 3"
+                        class="w-full object-cover rounded-lg"></div>
+                <div class="swiper-slide"><img src="./image/Rectangle 6459.png" alt="Equipment 4"
+                        class="w-full object-cover rounded-lg"></div>
+                <div class="swiper-slide"><img src="./image/Rectangle 6456.png" alt="Equipment 5"
+                        class="w-full object-cover rounded-lg"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- GIAO DIỆN ĐỘI NGŨ BÁC SĨ  -->
+    <div class="container mx-auto max-w-screen-xl  px-5  ">
+        <div class="flex flex-col md:flex-row justify-between items-center mt-10 md:mt-20">
+            <h2 class="text-2xl font-bold text-gray-800 text-center md:text-left">
+                Đội ngũ bác sĩ bệnh viện đa khoa Phương Đông
+            </h2>
+            <!-- Nút Tìm Bác Sĩ -->
+            <div class="flex space-x-2 mt-4 md:mt-0">
+                <a href="https://benhvienphuongdong.vn/doi-ngu-bac-si/" target="_blank"
+                    class="relative inline-flex items-center px-4 sm:px-5 py-1 sm:py-2 text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg rounded-full transition-all hover:from-orange-400 hover:to-orange-700 active:scale-95 mt-10 text-sm">
+                    <img src="./image/Group.png" alt="" class="w-4 h-4 mr-2">
+                    Tìm bác sĩ
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="flex items-center space-x-6">
+                <div class="relative">
+                    <img src="./image/Group 9643.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800">BS: NGUYỄN TRUNG CHÍNH</h3>
+                    <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Giám đốc Bệnh viện Đa khoa Phương Đông
+                    </p>
+                    <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
+                    <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>
+            <!-- bs 2 -->
+            <div class="flex items-center space-x-6">
+                <div class="relative">
+                    <img src="./image/Group 9644.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800">BS: NGUYỄN HUY BẢO</h3>
+                    <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương
+                        Đông</p>
+                    <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
+                    <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>
+            <!-- bs 3 -->
+            <div class="flex items-center space-x-6">
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800">BS: TRẦN KINH TRANG</h3>
+                    <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương
+                        Đông</p>
+                    <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
+                    <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="relative">
+                    <img src="./image/Group 9645.png" alt="">
+                </div>
+            </div>
+            <!-- bs 4 -->
+            <div class="flex items-center space-x-6">
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800">DS: NGUYỄN THỊ KIM YẾN</h3>
+                    <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương
+                        Đông</p>
+                    <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
+                    <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="relative">
+                    <img src="./image/Group 9646.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- GIAO DIỆN CHUYỂN DẠ SINH NON  -->
+    <div class="container mx-auto max-w-screen-xl  px-5  ">
+        <div class="flex flex-col md:flex-row justify-between items-center mt-10 md:mt-20">
+            <div>
+                <img src="./image/Rectangle 6461.png" alt="" class="w-full h-auto object-cover mt-6 md:mt-0">
+
+            </div>
+            <div class="bg-white p-6 ">
+                <h2 class="text-2xl font-bold text-gray-900">Chuyển dạ và sinh non có nguy hiểm?</h2>
+                <p class="text-gray-600 mt-4"><strong>Tính nguy hiểm của bệnh</strong><br>Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Sapien, nec morbi mauris.</p>
+                <p class="text-gray-600 mt-4"><strong>Các cấp độ</strong><br>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Id tortor odio posuere a cursus.</p>
+                <p class="text-gray-600 mt-4"><strong>Giải pháp</strong><br>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Sapien, nec morbi mauris.</p>
+            </div>
+        </div>
+
+        <!-- Phần 2 -->
+        <div class="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900">Dấu hiệu nhận biết chuyển dạ và sinh non:</h2>
+                <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi
+                    mauris, turpis fringilla condimentum urna sagittis est.</p>
+                <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi
+                    mauris, turpis fringilla condimentum urna sagittis est.</p>
+                <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, odio in
+                    turpis nunc mollis diam viverra dictum.</p>
+            </div>
+            <div class="">
+                <img src="./image//Rectangle 6463.png" alt="" class="w-full h-auto  object-cover -mt-6 md:-mt-12">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- GIAO DIỆN GIẢI PHÁP  -->
+
+    <div class="container mx-auto max-w-screen-xl px-5">
+        <div class="flex flex-col md:flex-row justify-between items-center mt-10 md:mt-20">
+            <!-- Phần hình ảnh -->
+            <div class="relative md:w-1/2 mb-6 md:mb-0">
+                <img src="./image/bsigp.png" alt="Bác sĩ tư vấn" class="rounded-2xl w-full h-auto">
+            </div>
+
+            <!-- Phần nội dung -->
+            <div class="md:w-1/2 p-6 text-center md:text-left">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900">
+                    Giải pháp an toàn hãy lựa chọn dịch vụ thai sản trọn gói tại bệnh viện Phương Đông
+                </h2>
+                <p class="text-gray-600 mt-4 text-sm md:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut risus luctus donec Lorem
+                    malesuada scelerisque euismod ullamcorper ac lacus aliquet quisque.
+                </p>
+                <a href="javascript:void(0);" id="openModal"
+                    class="relative inline-flex items-center px-4 sm:px-5 py-1 sm:py-2 text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg rounded-full transition-all hover:from-orange-400 hover:to-orange-700 active:scale-95 mt-10 text-sm">
+                    <img src="./image/Path@3x.png" alt="Mở video" class="w-5 mr-2 cursor-pointer">
+                    Liên hệ ngay
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal chứa video YouTube -->
+    <!-- Modal -->
+
+    <!-- <div id="videoModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="relative bg-white rounded-lg p-4">
+            <!-- Dấu "X" để đóng modal -->
+            <button id="closeModal" class="absolute top-0.5 right-1 text-black text-2xl">
+                &times;
             </button>
-            <button id="nextBtn" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:from-orange-400 hover:to-orange-700">
-                ❯
-            </button>
+
+            <!-- Video YouTube -->
+            <iframe id="youtubeVideo" class="w-full h-64 rounded-lg" src="" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-    </div>
-
-    <!-- SwiperJS Slider -->
-    <div class="swiper mySwiper mt-26">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./image/Rectangle 6455.png" alt="Equipment 1" class=" w-full object-cover "></div>
-            <div class="swiper-slide"><img src="./image/Rectangle 6456.png" alt="Equipment 2" class="w-full object-cover "></div>
-            <div class="swiper-slide"><img src="./image/Rectangle 6455.png" alt="Equipment 1" class=" w-full object-cover "></div>
-            <div class="swiper-slide"><img src="./image/Rectangle 6459.png" alt="Equipment 4" class="w-full object-cover "></div>
-            <div class="swiper-slide"><img src="./image/Rectangle 6456.png" alt="Equipment 5" class="w-full object-cover "></div>
-        </div>
-    </div>
-</div>
+    </div> -->
 
 
 
 
 
-<!-- GIAO DIỆN ĐỘI NGŨ BÁC SĨ  -->
-<div class="container mx-auto max-w-screen-xl py-10 px-5">
-    <div class="flex flex-col md:flex-row justify-between items-center mt-10 md:mt-20">
-        <h2 class="text-2xl font-bold text-gray-800 text-center md:text-left">
-            Đội ngũ bác sĩ bệnh viện đa khoa Phương Đông
-        </h2>
-      <!-- Nút Tìm Bác Sĩ -->
-      <div class="flex space-x-2 mt-4 md:mt-0">
-        <a href="https://benhvienphuongdong.vn/doi-ngu-bac-si/" target="_blank" class="relative inline-flex items-center px-4 sm:px-5 py-1 sm:py-2 text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg rounded-full transition-all hover:from-orange-400 hover:to-orange-700 active:scale-95 mt-10 text-sm">
-            <img src="./image/Group.png" alt="" class="w-4 h-4 mr-2">
-            Tìm bác sĩ
-        </a>
-    </div>
-    
+    <div class="container w-full mx-auto p-6 pt-10">
+        <div class="flex flex-col items-center md:flex-row md:items-start md:pl-20">
+            <div class="py-12 px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">
+                    Hậu quả chuyển dạ và sinh non nếu không điều trị kịp thời
+                </h2>
+                <p class="text-gray-600 mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris,
+                    turpis fringilla condimentum urna sagittis.
+                </p>
 
-    </div>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <div class="flex items-center space-x-6">
-        <div class="relative">
-          <img src="./image/Group 9643.png" alt="" >
-        </div>
-        <div>
-          <h3 class="text-lg font-bold text-gray-800">BS: NGUYỄN TRUNG CHÍNH</h3>
-          <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Giám đốc Bệnh viện Đa khoa Phương Đông</p>
-          <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
-          <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
-        </div>
-      </div>
-      <!-- bs 2 -->
-      <div class="flex items-center space-x-6">
-          <div class="relative">
-              <img src="./image/Group 9644.png" alt="" >
-            </div>
-        <div>
-          <h3 class="text-lg font-bold text-gray-800">BS: NGUYỄN HUY BẢO</h3>
-          <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương Đông</p>
-          <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
-          <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
-        </div>
-      </div>
-      <!-- bs 3 -->
-      <div class="flex items-center space-x-6">
-        <div>
-          <h3 class="text-lg font-bold text-gray-800">BS: TRẦN KINH TRANG</h3>
-          <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương Đông</p>
-          <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
-          <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
-        </div>
-        <div class="relative">
-          <img src="./image/Group 9645.png" alt="" >
-        </div>
-      </div>
-      <!-- bs 4 -->
-      <div class="flex items-center space-x-6">
-        <div>
-          <h3 class="text-lg font-bold text-gray-800">DS: NGUYỄN THỊ KIM YẾN</h3>
-          <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương Đông</p>
-          <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
-          <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
-        </div>
-        <div class="relative">
-          <img src="./image/Group 9646.png" alt="" >
-        </div>
-      </div>
-    </div>
-  </div>
+                <!-- Nhóm 1: Gây sảy thai và Sinh sản gặp khó khăn -->
+                <div class="flex justify-between mt-10 gap-6">
+                    <!-- Gây sảy thai -->
+                    <div class="flex flex-col items-start text-left w-auto">
+                        <img src="./image/hqua1.png" alt="Gây sảy thai" class="w-16 h-16 mb-4">
+                        <div class="w-full">
+                            <h3 class="text-lg font-bold text-gray-900">Gây sảy thai</h3>
+                            <p class="text-gray-600 mt-2">
+                                Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Sapien, nec morbi mauris,
+                                <br>turpis fringilla condimentum urna sagittis.
+                            </p>
+                        </div>
+                    </div>
 
-
-
-
-    
-
-  <!-- GIAO DIỆN CHUYỂN DẠ SINH NON  -->
-  <div class="p-6 md:p-8 overflow-hidden">
-    <!-- Phần 1 -->
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-        <div>
-            <img src="./image/Rectangle 6461.png" alt="" 
-     class="w-full h-auto object-cover mt-6 md:mt-0">
-
-        </div>
-        <div class="bg-white p-6 ">
-            <h2 class="text-2xl font-bold text-gray-900">Chuyển dạ và sinh non có nguy hiểm?</h2>
-            <p class="text-gray-600 mt-4"><strong>Tính nguy hiểm của bệnh</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris.</p>
-            <p class="text-gray-600 mt-4"><strong>Các cấp độ</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tortor odio posuere a cursus.</p>
-            <p class="text-gray-600 mt-4"><strong>Giải pháp</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris.</p>
-        </div>
-    </div>
-    
-    <!-- Phần 2 -->
-    <div class="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-        <div>
-            <h2 class="text-2xl font-bold text-gray-900">Dấu hiệu nhận biết chuyển dạ và sinh non:</h2>
-            <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est.</p>
-            <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est.</p>
-            <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, odio in turpis nunc mollis diam viverra dictum.</p>
-        </div>
-        <div class="">
-            <img src="./image//Rectangle 6463.png" alt="" class="w-full h-auto  object-cover -mt-6 md:-mt-12">
-        </div>
-    </div>
-</div>
-
-
-<!-- GIAO DIỆN GIẢI PHÁP  -->
-<div class="max-w-6xl mx-auto my-10 p-6 bg-white flex flex-col-reverse md:flex-row items-center">
-
-       <!-- Phần hình ảnh -->
-       <div class="relative md:w-1/2 mb-6 md:mb-0">
-        <img src="./image/bsigp.png" alt="Bác sĩ tư vấn" class="rounded-2xl w-full h-auto">
-    </div>
-    
-    <!-- Phần nội dung -->
-    <div class="md:w-1/2 p-6 text-center md:text-left">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">
-            Giải pháp an toàn hãy lựa chọn dịch vụ thai sản trọn gói tại bệnh viện Phương Đông
-        </h2>
-        <p class="text-gray-600 mt-4 text-sm md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut risus luctus donec Lorem malesuada scelerisque euismod ullamcorper ac lacus aliquet quisque.
-        </p>
-        <a href="tel:19001806" class="relative inline-flex items-center px-4 sm:px-5 py-1 sm:py-2 text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg rounded-full transition-all hover:from-orange-400 hover:to-orange-700 active:scale-95 mt-10 text-sm">
-            <img src="./image/Path@3x.png" alt="Mở video" class="w-5 mr-2 cursor-pointer" id="videoIcon">
-            Liên hệ ngay
-        </a>
-    </div>
-    
-
- 
-</div>
-
-
-
-<!-- GIAO DIỆN LỰA CHỌN  -->
-<div class="max-w-6xl mx-auto my-10 p-6 flex flex-col md:flex-row items-center">
-    <div class="md:w-1/2">
-        <h2 class="text-3xl font-bold text-gray-900">
-            Tại sao bạn nên chọn gói dịch vụ thai sản tại bệnh viện Phương Đông
-        </h2>
-        <ul class="mt-6 space-y-4 text-gray-600">
-            <li><strong>Khám định kỳ với Bác sĩ sản khoa.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li><strong>Chăm sóc thai kỳ cùng bác sĩ Sản khoa hàng đầu.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li><strong>Ekip đón bé chuyên môn cao, có khả năng xử lý nhiều ca khó.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li><strong>Chăm lo cho mẹ và bé chu đáo - Cả nhà nhân tình.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        </ul>
-        <a href="tel:19001806" class="relative inline-flex items-center px-4 sm:px-5 py-1 sm:py-2 text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg rounded-full transition-all hover:from-orange-400 hover:to-orange-700 active:scale-95 mt-10 text-sm">
-            <img src="./image/Path@3x.png" alt="Mở video" class="w-5 mr-2 cursor-pointer" id="videoIcon">
-            Liên hệ ngay
-        </a>
-    </div>
-    <div class="md:w-1/2 flex justify-center relative mt-10 md:mt-0">
-        <img src="./image/dvu.png" alt="Thai sản" class="w-full h-auto">
-    </div>
-</div>
-
-
-<!-- GIAO DIỆN HẬU QUẢ  -->
-<div class=" flex min-h-screen w-full">
-    <div class="max-w-6xl mx-auto py-12 px-6 text-center">
-        <h2 class="text-3xl font-bold text-gray-900">
-            Hậu quả chuyển dạ và sinh non nếu không điều trị kịp thời
-        </h2>
-        <p class="text-gray-600 mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, 
-            turpis fringilla condimentum urna sagittis.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mt-10">
-            <!-- Gây sảy thai -->
-            <div class="flex flex-col items-start text-left ">
-                <img src="./image/hqua1.png" alt="Gây sảy thai" class="w-16 h-16 mb-4">
-                <div class="w-full">
-                    <h3 class="text-lg font-bold text-gray-900">Gây sảy thai</h3>
-                    <p class="text-gray-600 mt-2">
-                        Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Sapien, nec morbi mauris, <br>turpis fringilla condimentum urna sagittis.
-                    </p>
+                    <!-- Sinh sản gặp khó khăn -->
+                    <div class="flex flex-col items-start text-left w-auto">
+                        <img src="./image/hqua3.png" alt="Sinh sản gặp khó khăn" class="w-16 h-16 mb-4">
+                        <div class="w-full">
+                            <h3 class="text-lg font-bold text-gray-900">Sinh sản gặp khó khăn</h3>
+                            <p class="text-gray-600 mt-2">
+                                Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Sapien, nec morbi mauris,
+                                <br>turpis fringilla condimentum urna sagittis.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                
-            </div>
+                <!-- Nhóm 2: Nguy hiểm cho mẹ và con và Gây mất khả năng sinh sản -->
+                <div class="flex justify-between mt-10 gap-12 ml-[400px]">
+                    <!-- Nguy hiểm cho cả hai mẹ con -->
+                    <div class="flex flex-col items-start text-left">
+                        <img src="./image/hqua2.png" alt="Nguy hiểm cho cả hai mẹ con" class="w-16 h-16 mb-4">
+                        <div class="w-full">
+                            <h3 class="text-lg font-bold text-gray-900">Nguy hiểm cho cả hai mẹ con</h3>
+                            <p class="text-gray-600 mt-2">
+                                Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Sapien, nec morbi mauris,
+                                <br>turpis fringilla condimentum urna sagittis.
+                            </p>
+                        </div>
+                    </div>
 
-            <!-- Nguy hiểm cho cả hai mẹ con -->
-            <div class="flex flex-col items-start text-left ml">
-                <img src="./image/hqua2.png" alt="Nguy hiểm cho cả hai mẹ con" class="w-16 h-16 mb-4">
-                <div class="w-full">
-                    <h3 class="text-lg font-bold text-gray-900">Nguy hiểm cho cả hai mẹ con</h3>
-                    <p class="text-gray-600 mt-2">
-                        Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Sapien, nec morbi mauris, <br>turpis fringilla condimentum urna sagittis.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Sinh sản gặp khó khăn -->
-            <div class="flex flex-col items-start text-left">
-                <img src="./image/hqua3.png" alt="Sinh sản gặp khó khăn" class="w-16 h-16 mb-4">
-                <div class="w-full">
-                    <h3 class="text-lg font-bold text-gray-900">Sinh sản gặp khó khăn</h3>
-                    <p class="text-gray-600 mt-2">
-                        Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Sapien, nec morbi mauris, <br>turpis fringilla condimentum urna sagittis.
-                    </p>
-                </div>
-                
-            </div>
-
-            <!-- Gây mất khả năng sinh sản -->
-            <div class="flex flex-col items-start text-left ml-6 ">
-                <img src="./image/hqua4.png" alt="Gây mất khả năng sinh sản" class="w-16 h-16 mb-4 mr-50">
-                <div class="w-full">
-                    <h3 class="text-lg font-bold text-gray-900">Gây mất khả năng sinh sản</h3>
-                    <p class="text-gray-600 mt-2">
-                        Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Sapien, nec morbi mauris, <br>turpis fringilla condimentum urna sagittis.
-                    </p>
+                    <!-- Gây mất khả năng sinh sản -->
+                    <div class="flex flex-col items-start text-left">
+                        <img src="./image/hqua4.png" alt="Gây mất khả năng sinh sản" class="w-16 h-16 mb-4">
+                        <div class="w-full">
+                            <h3 class="text-lg font-bold text-gray-900">Gây mất khả năng sinh sản</h3>
+                            <p class="text-gray-600 mt-2">
+                                Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Sapien, nec morbi mauris,
+                                <br>turpis fringilla condimentum urna sagittis.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div> 
 
 
-<!-- FOOTER  -->
-<footer class="bg-gradient-to-r from-[#1CAB55] to-[#04A4EC] text-white py-10">
-    <div class="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row justify-between">
-        <!-- Logo và mô tả -->
-        <div class="md:w-1/4">
-            <img src="./image/Logo 1 (1).png" alt="Logo Phương Đông" class="w-40 mb-4">
-            <h2 class="font-bold text-lg">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h2>
-            <p class="text-sm opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna sit morbi nisl contale consectetur pellentesque ullamcorper con viverra id cursus hendreritenim ultrices.</p>
-        </div>
-        
-        <!-- Thông tin liên hệ -->
-        <div class="md:w-1/4">
-            <h3 class="font-semibold text-lg">Thông tin liên hệ</h3>
-            <p class="text-sm mt-2">Địa chỉ: Số 9, Phố Viên, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội</p>
-            <p class="text-sm">Email: <a href="mailto:bvphuongdong@phuongdonghospital.vn" class="underline">bvphuongdong@phuongdonghospital.vn</a></p>
-            <p class="text-sm">info.benhvienphuongdong@gmail.com</p>
-            <p class="text-sm font-bold">Tổng đài tư vấn: 1900 1806</p>
-        </div>
 
-        <!-- Giờ làm việc -->
-        <div class="md:w-1/4">
-            <h3 class="font-semibold text-lg">Giờ làm việc</h3>
-            <p class="text-sm mt-2">Từ 7:00 - 19:00 từ Thứ 2 đến CN</p>
-            <p class="text-sm">Cấp cứu 24/7: 0833 015 115</p>
-            <p class="text-sm">Hotline Tiêm chủng: 0911 615 115</p>
-            <p class="text-sm font-bold">Hotline Hỗ trợ khách hàng: 1900 1806</p>
-        </div>
 
-        <!-- Theo dõi chúng tôi -->
-        <div class="md:w-1/4">
-            <h3 class="font-semibold text-lg">Theo dõi chúng tôi</h3>
-            <div class="flex space-x-4 mt-3">
-                <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-white text-2xl"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="text-white text-2xl"><i class="fab fa-tiktok"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+    <!-- FOOTER  -->
+    <footer class="bg-gradient-to-r from-[#1CAB55] to-[#04A4EC] text-white py-10">
+        <div class="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row justify-between">
+            <!-- Logo và mô tả -->
+            <div class="md:w-1/4">
+                <img src="./image/Logo 1 (1).png" alt="Logo Phương Đông" class="w-40 mb-4">
+                <h2 class="font-bold text-lg">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h2>
+                <p class="text-sm opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna sit morbi
+                    nisl contale consectetur pellentesque ullamcorper con viverra id cursus hendreritenim ultrices.</p>
             </div>
-            <img src="./image//thong-bao-website-voi-bo-cong-thuong_grande_waifu2x_photo_noise3_scale_tta_1 1.png" alt="Đã thông báo Bộ Công Thương" class="w-32 mt-4">
+
+            <!-- Thông tin liên hệ -->
+            <div class="md:w-1/4">
+                <h3 class="font-semibold text-lg">Thông tin liên hệ</h3>
+                <p class="text-sm mt-2">Địa chỉ: Số 9, Phố Viên, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội</p>
+                <p class="text-sm">Email: <a href="mailto:bvphuongdong@phuongdonghospital.vn"
+                        class="underline">bvphuongdong@phuongdonghospital.vn</a></p>
+                <p class="text-sm">info.benhvienphuongdong@gmail.com</p>
+                <p class="text-sm font-bold">Tổng đài tư vấn: 1900 1806</p>
+            </div>
+
+            <!-- Giờ làm việc -->
+            <div class="md:w-1/4">
+                <h3 class="font-semibold text-lg">Giờ làm việc</h3>
+                <p class="text-sm mt-2">Từ 7:00 - 19:00 từ Thứ 2 đến CN</p>
+                <p class="text-sm">Cấp cứu 24/7: 0833 015 115</p>
+                <p class="text-sm">Hotline Tiêm chủng: 0911 615 115</p>
+                <p class="text-sm font-bold">Hotline Hỗ trợ khách hàng: 1900 1806</p>
+            </div>
+
+            <!-- Theo dõi chúng tôi -->
+            <div class="md:w-1/4">
+                <h3 class="font-semibold text-lg">Theo dõi chúng tôi</h3>
+                <div class="flex space-x-4 mt-3">
+                    <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-white text-2xl"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <img src="./image//thong-bao-website-voi-bo-cong-thuong_grande_waifu2x_photo_noise3_scale_tta_1 1.png"
+                    alt="Đã thông báo Bộ Công Thương" class="w-32 mt-4">
+            </div>
         </div>
+
+
+        <div class="text-center text-sm mt-6 opacity-75">© Copyright 2022 Bệnh Viện Đa khoa Phương Đông. All rights
+            reserved</div>
+    </footer>
+
+
+
     </div>
-    <div class="text-center text-sm mt-6 opacity-75">© Copyright 2022 Bệnh Viện Đa khoa Phương Đông. All rights reserved</div>
-</footer>
 
 
-            
-        </div>
-    </div>
-    
 
-                    
-                
-    
+
+
+
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
