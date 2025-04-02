@@ -527,15 +527,15 @@
           src="https://img.youtube.com/vi/Ef83M9iiJh0/maxresdefault.jpg"
           class="absolute top-0 left-0 w-full h-full cursor-pointer rounded-lg"
           alt="Video Thumbnail"
-          onclick="playVideo()"
+          onclick="openPopup()"
         />
         <!-- Icon YouTube ở giữa ảnh -->
         <div 
           class="absolute inset-0 flex items-center justify-center cursor-pointer"
-          onclick="playVideo()"
+          onclick="openPopup()"
         >
-          <div class="bg-black bg-opacity-50 rounded-full p-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_circle_%282017%29.svg" 
+          <div class=" p-4">
+            <img src="../image/youtube-svgrepo-com.svg" 
                  alt="Play Button" class="w-16 h-16">
           </div>
         </div>
@@ -564,6 +564,18 @@
       </a>
     </div>
   </section>
+
+  <!-- Popup Video -->
+<div id="video-popup" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center">
+  <button class="absolute top-3 right-3 text-white p-4 bg-gray-800 bg-opacity-50 rounded-full text-2xl" onclick="closePopup()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+    </svg>
+  </button>
+  <div class="relative w-[90%] md:w-[80%] lg:w-[70%]">
+    <iframe id="youtube-video" width="100%" height="500" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
   
     <section
       class="grid grid-cols-1 md:grid-cols-2 items-center max-w-[1408px] mx-auto py-12 px-6 gap-8"

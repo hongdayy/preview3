@@ -143,33 +143,17 @@ document.addEventListener("DOMContentLoaded", function () {
   sliderWrapper1.addEventListener("mouseup", endDrag);
   sliderWrapper1.addEventListener("mouseleave", endDrag);
 });
-function playVideo() {
-  var container = document.getElementById("video-container");
-  
-  // Thêm iframe vào div container
-  container.innerHTML = `
-    <iframe 
-      id="youtube-video"
-      class="absolute top-0 left-0 w-full h-full rounded-lg"
-      src="https://www.youtube.com/embed/Ef83M9iiJh0?autoplay=1&rel=0"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
-  `;
 
-  // Đợi iframe được thêm vào DOM, sau đó kích hoạt fullscreen
-  setTimeout(() => {
-    var iframe = document.getElementById("youtube-video");
-    if (iframe.requestFullscreen) {
-      iframe.requestFullscreen();
-    } else if (iframe.mozRequestFullScreen) { // Firefox
-      iframe.mozRequestFullScreen();
-    } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, Opera
-      iframe.webkitRequestFullscreen();
-    } else if (iframe.msRequestFullscreen) { // IE/Edge
-      iframe.msRequestFullscreen();
-    }
-  }, 300);
+
+
+
+
+function openPopup() {
+  document.getElementById('video-popup').classList.remove('hidden');
+  document.getElementById('youtube-video').src = "https://www.youtube.com/embed/Ef83M9iiJh0?autoplay=1";
+}
+
+function closePopup() {
+  document.getElementById('video-popup').classList.add('hidden');
+  document.getElementById('youtube-video').src = "";
 }
