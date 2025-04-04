@@ -107,3 +107,27 @@ function closePopup() {
 }
 
 
+  const btnOpen = document.getElementById("btnOpenPopup");
+  const btnClose = document.getElementById("btnClosePopup");
+  const popup = document.getElementById("popup");
+  const btnRegister = document.getElementById("btnRegister");
+  const toast = document.getElementById("successToast");
+
+  btnOpen.addEventListener("click", () => {
+    popup.classList.remove("hidden");
+  });
+
+  btnClose.addEventListener("click", () => {
+    popup.classList.add("hidden");
+  });
+
+  btnRegister.addEventListener("click", () => {
+    popup.classList.add("hidden");
+    toast.classList.remove("hidden");
+    setTimeout(() => {
+      toast.classList.add("hidden");
+    }, 3000); // ẩn sau 3s
+  });
+
+
+
