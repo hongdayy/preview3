@@ -18,7 +18,7 @@
 
     <!-- HEADER  -->
     <div class="container  mx-auto max-w-screen-xl  px-5">
-      <header class="flex justify-between items-center lg:px-5 py-4 bg-white shadow-md">
+      <header class="flex justify-between items-center lg:px-5 py-4 bg-white ">
         <div class="logo">
           <img src="../image/Logo 1.png" alt="Phương Đông" class="h-12" />
         </div>
@@ -41,6 +41,7 @@
             Hotline: 1900 1806
           </a>
         </div>
+        <div id="overlay" class="overlay"></div>
     
         <!-- Mobile Menu Button -->
         <div class="md:hidden">
@@ -88,10 +89,10 @@
     
 
   <!-- THAI SẢN  -->
-  <div class="px-5 container  mx-auto max-w-screen-xl ">
+  <div class="px-5  ">
     <section class="bg-white rounded-lg  py-4 lg:pl-5">
       <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
-        <div class=" ">
+        <div class=" container  mx-auto max-w-screen-xl lg:ml-20 ">
           <h2 class="md:text-2xl font-bold text-gray-800 py-4">
             Chương trình ưu đãi:
           </h2>
@@ -111,78 +112,175 @@
         </div>
   
         <!-- Swiper Section -->
-        <div class="col-span-2 w-full pt-10 ">
+        <div class="col-span-2 w-full pt-10 lg:ml-5  ">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <!-- Swiper Slide 1 -->
-              <div class="swiper-slide bg-white rounded-xl shadow-lg flex flex-col w-full max-w-xs mx-auto transition-all duration-300 hover:scale-105">
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all  ">
                 <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
                   <p class="text-lg font-light">Ưu đãi 50%</p>
                   <p class="text-sm font-bold">Gói khám thai tổng quát</p>
                   <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:scale-105 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
                 </div>
               </div>
+
+              
   
               <!-- Swiper Slide 2 -->
-              <div class="swiper-slide bg-white rounded-xl shadow-lg flex flex-col w-full max-w-xs mx-auto transition-all duration-300 hover:scale-105">
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
                 <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
                   <p class="text-lg font-light">Ưu đãi 50%</p>
                   <p class="text-sm font-bold">Gói khám thai tổng quát</p>
                   <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:scale-105 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                    Đăng ký nhận ưu đãi
+                  </button>
+                </div>
+              </div>
+
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+                <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                  <p class="text-lg font-light">Ưu đãi 50%</p>
+                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                    Đăng ký nhận ưu đãi
+                  </button>
+                </div>
+              </div>
+
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+                <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                  <p class="text-lg font-light">Ưu đãi 50%</p>
+                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                    Đăng ký nhận ưu đãi
+                  </button>
+                </div>
+              </div>
+
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+                <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                  <p class="text-lg font-light">Ưu đãi 50%</p>
+                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                    Đăng ký nhận ưu đãi
+                  </button>
+                </div>
+              </div>
+
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+                <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                  <p class="text-lg font-light">Ưu đãi 50%</p>
+                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                    Đăng ký nhận ưu đãi
+                  </button>
+                </div>
+              </div>
+
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+                <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                  <p class="text-lg font-light">Ưu đãi 50%</p>
+                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                    Đăng ký nhận ưu đãi
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+                <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                  <p class="text-lg font-light">Ưu đãi 50%</p>
+                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                    Đăng ký nhận ưu đãi
+                  </button>
+                </div>
+              </div>
+
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+                <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                  <p class="text-lg font-light">Ưu đãi 50%</p>
+                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                    Đăng ký nhận ưu đãi
+                  </button>
+                </div>
+              </div>
+
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+                <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
+                  <p class="text-lg font-light">Ưu đãi 50%</p>
+                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
+                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
                 </div>
               </div>
   
-              <div class="swiper-slide bg-white rounded-xl shadow-lg flex flex-col w-full max-w-xs mx-auto transition-all duration-300 hover:scale-105">
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all duration-300 ">
                 <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
                 <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
                   <p class="text-lg font-light">Ưu đãi 50%</p>
                   <p class="text-sm font-bold">Gói khám thai tổng quát</p>
                   <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:scale-105 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl shadow-lg flex flex-col w-full max-w-xs mx-auto transition-all duration-300 hover:scale-105">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all duration-300 ">
                 <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
                 <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
                   <p class="text-lg font-light">Ưu đãi 50%</p>
                   <p class="text-sm font-bold">Gói khám thai tổng quát</p>
                   <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:scale-105 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl shadow-lg flex flex-col w-full max-w-xs mx-auto transition-all duration-300 hover:scale-105">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all duration-300 ">
                 <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
                 <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
                   <p class="text-lg font-light">Ưu đãi 50%</p>
                   <p class="text-sm font-bold">Gói khám thai tổng quát</p>
                   <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:scale-105 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl shadow-lg flex flex-col w-full max-w-xs mx-auto transition-all duration-300 hover:scale-105">
+              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all duration-300 ">
                 <img src="../image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
                 <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
                   <p class="text-lg font-light">Ưu đãi 50%</p>
                   <p class="text-sm font-bold">Gói khám thai tổng quát</p>
                   <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:scale-105 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
                 </div>
@@ -259,11 +357,11 @@
       </section> -->
    
     
-      <div class=" max-w-full h-auto bg-gradient-to-r from-[#50C577] via-[#C4EACE] to-[#B5E8FD] my-20 py-20 px-10">
-        <div class="container mr-7 mx-auto max-w-screen-xl  px-5  bg-white rounded-2xl">
+      <div class=" max-w-full h-auto bg-gradient-to-r from-[#50C577] via-[#C4EACE] to-[#B5E8FD] my-10 py-10 px-10">
+        <div class="container mr-7 mx-auto max-w-screen-xl  px-5  bg-white">
             <section class="max-w-[1456px] rounded-2xl ">
-              <div class="grid grid-cols-1 sm:grid-cols-[auto,1fr] items-center justify-center text-center">
-                <img src="../image/Logo 1.png" alt="Logo" class="h-10 mx-auto mb-4 sm:mb-0" />
+              <div class="grid grid-cols-1 sm:grid-cols-[auto,1fr] items-center justify-center text-center sm:pt-">
+                <img src="../image/Logo 1.png" alt="Logo" class="h-10 mx-auto sm:mb-4  " />
                 <div>
                     <h1 class="text-2xl font-semibold pt-6">Bảng giá các dịch vụ khám và chữa bệnh</h1>
                     <p class="text-sm text-gray-600 mb-4">
@@ -274,7 +372,7 @@
             
     
                 <div class="w-full text-sm text-left text-gray-500 rounded-lg border">
-                    <div class="flex text-xs text-white border-b bg-gradient-to-r from-[#50C577] to-[#2DBEFC] rounded-t-2xl">
+                    <div class="flex text-xs text-white border-b bg-gradient-to-r from-[#50C577] to-[#2DBEFC] rounded-t-2xl ">
                         <div class="w-12 h-auto flex flex-col items-center justify-center border-r text-center text-xl font-bold">STT</div>
                         <div class="flex-1 flex flex-col items-center justify-center border-r text-center text-xl font-bold">TÊN DỊCH VỤ</div>
                         <div class="w-1/2 flex flex-col items-center border-r">
@@ -290,104 +388,136 @@
                         <div class="flex border-b">
                             <div class="py-4 px-6 w-12 border-r flex items-center justify-center">1</div>
                             <div class="py-4 px-6 flex-1 border-r">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</div>
-                            <div class="py-4 px-6 w-[382px] border-r flex items-center justify-center">200,000 / giờ</div>
-                            <div class="py-4 px-6 w-[382px] flex items-center justify-center">400,000 / giờ</div>
+                            <div class="py-4 px-6 w-[310px] border-r flex items-center justify-center">200,000 / giờ</div>
+                            <div class="py-4 px-6 w-[310px] flex items-center justify-center">400,000 / giờ</div>
                         </div>
                         <div class="flex bg-gray-50 border-b">
                             <div class="py-4 px-6 w-12 border-r flex items-center justify-center">2</div>
                             <div class="py-4 px-6 flex-1 border-r">Cắt chỉ</div>
-                            <div class="py-4 px-6 w-[382px] border-r flex items-center justify-center">300,000 / lần</div>
-                            <div class="py-4 px-6 w-[382px] flex items-center justify-center">300,000 / lần</div>
+                            <div class="py-4 px-6 w-[310px] border-r flex items-center justify-center">300,000 / lần</div>
+                            <div class="py-4 px-6 w-[310px] flex items-center justify-center">300,000 / lần</div>
                         </div>
                         <div class="flex border-b">
                             <div class="py-4 px-6 w-12 border-r flex items-center justify-center">3</div>
                             <div class="py-4 px-6 flex-1 border-r">Phương tiện báo họ lấy máu</div>
-                            <div class="py-4 px-6 w-[382px] border-r flex items-center justify-center">300,000 / lần</div>
-                            <div class="py-4 px-6 w-[382px] flex items-center justify-center">300,000 / lần</div>
+                            <div class="py-4 px-6 w-[310px] border-r flex items-center justify-center">300,000 / lần</div>
+                            <div class="py-4 px-6 w-[310px] flex items-center justify-center">300,000 / lần</div>
                         </div>
                         <div class="flex bg-gray-50 border-b">
                             <div class="py-4 px-6 w-12 border-r flex items-center justify-center">4</div>
                             <div class="py-4 px-6 flex-1 border-r">Tắm bé tại nhà</div>
-                            <div class="py-4 px-6 w-[382px] border-r text-center flex items-center justify-center">300,000 / lần</div>
-                            <div class="py-4 px-6 w-[382px] text-center flex items-center justify-center">300,000 / lần</div>
+                            <div class="py-4 px-6 w-[310px] border-r text-center flex items-center justify-center">300,000 / lần</div>
+                            <div class="py-4 px-6 w-[310px] text-center flex items-center justify-center">300,000 / lần</div>
                         </div>
                         
                         <div class="flex border-b">
                           <div class="py-4 px-6 w-12 border-r">5</div>
                           <div class="py-4 px-6 flex-1 border-r">Dẫn lưu nước tiểu bàng quang</div>
-                          <div class="py-4 px-6 w-[382px] border-r text-center">300,000 / lần</div>
-                          <div class="py-4 px-6 w-[382px] text-center">300,000 / lần</div>
+                          <div class="py-4 px-6 w-[310px] border-r text-center">300,000 / lần</div>
+                          <div class="py-4 px-6 w-[310px] text-center">300,000 / lần</div>
                       </div>
                       <div class="flex bg-gray-50 border-b">
                           <div class="py-4 px-6 w-12 border-r">6</div>
                           <div class="py-4 px-6 flex-1 border-r">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</div>
-                          <div class="py-4 px-6 w-[382px] border-r text-center">200,000 / giờ</div>
-                          <div class="py-4 px-6 w-[382px] text-center">400,000 / giờ</div>
+                          <div class="py-4 px-6 w-[310px] border-r text-center">200,000 / giờ</div>
+                          <div class="py-4 px-6 w-[310px] text-center">400,000 / giờ</div>
                       </div>
                       <div class="flex border-b">
                           <div class="py-4 px-6 w-12 border-r">7</div>
                           <div class="py-4 px-6 flex-1 border-r">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</div>
-                          <div class="py-4 px-6 w-[382px] border-r text-center">200,000 / giờ</div>
-                          <div class="py-4 px-6 w-[382px] text-center">400,000 / giờ</div>
+                          <div class="py-4 px-6 w-[310px] border-r text-center">200,000 / giờ</div>
+                          <div class="py-4 px-6 w-[310px] text-center">400,000 / giờ</div>
                       </div>
                       <div class="flex bg-gray-50 border-b">
                           <div class="py-4 px-6 w-12 border-r">8</div>
                           <div class="py-4 px-6 flex-1 border-r">Xét nghiệm tại nhà</div>
-                          <div class="py-4 px-6 w-[764px] text-center" colspan="2">Theo giá niêm yết tại BVĐK Phương Đông</div>
+                          <div class="py-4 px-6 w-[620px] text-center" colspan="2">Theo giá niêm yết tại BVĐK Phương Đông</div>
                       </div>
                       <div class="flex border-b">
                           <div class="py-4 px-6 w-12 border-r">9</div>
                           <div class="py-4 px-6 flex-1 border-r">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</div>
-                          <div class="py-4 px-6 w-[382px] border-r text-center">200,000 / giờ</div>
-                          <div class="py-4 px-6 w-[382px] text-center">400,000 / giờ</div>
+                          <div class="py-4 px-6 w-[310px] border-r text-center">200,000 / giờ</div>
+                          <div class="py-4 px-6 w-[310px] text-center">400,000 / giờ</div>
                       </div>
                       <div class="flex bg-gray-50 border-b">
                           <div class="py-4 px-6 w-12 border-r">10</div>
                           <div class="py-4 px-6 flex-1 border-r">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</div>
-                          <div class="py-4 px-6 w-[382px] border-r text-center">200,000 / giờ</div>
-                          <div class="py-4 px-6 w-[382px] text-center">400,000 / giờ</div>
+                          <div class="py-4 px-6 w-[310px] border-r text-center">200,000 / giờ</div>
+                          <div class="py-4 px-6 w-[310px] text-center">400,000 / giờ</div>
                       </div>
                       <div class="flex">
                           <div class="py-4 px-6 w-12 border-r">11</div>
                           <div class="py-4 px-6 flex-1 border-r">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</div>
-                          <div class="py-4 px-6 w-[382px] border-r text-center">200,000 / giờ</div>
-                          <div class="py-4 px-6 w-[382px] text-center">400,000 / giờ</div>
+                          <div class="py-4 px-6 w-[310px] border-r text-center">200,000 / giờ</div>
+                          <div class="py-4 px-6 w-[310px] text-center">400,000 / giờ</div>
                       </div>
                   </div>
-                  <div class="max-w-full flex flex-col sm:flex-row justify-evenly items-center h-10 bg-gradient-to-r from-[#50C577] to-[#2DBEFC] rounded-b-2xl px-4 space-y-2 sm:space-y-0 sm:space-x-4">
-                  
-                    <div class="flex items-center space-x-2 text-white hidden sm:flex">
-                        <img src="../image/Phone, Call.png" alt="Phone Icon" class="w-5 h-5" />
-                        <p>Hotline: 1900 1806</p>
-                    </div>
-                    <a href="https://benhvienphuongdong.vn" class="flex items-center space-x-2 text-white">
-                        <img src="../image/Earth, Home, World.png" alt="World Icon" class="w-5 h-5" />
-                        <span>https://benhvienphuongdong.vn</span>
-                    </a>
-                </div>
+               
                 
                 
                   
                     </div>
                     
+                    
                 </div>
+                <div class="container mr-7 mx-auto max-w-screen-xl flex flex-col sm:flex-row justify-evenly items-center md:h-10 bg-gradient-to-r from-[#50C577] to-[#2DBEFC] rounded-b-2xl px-4 space-y-2 sm:space-y-0 sm:space-x-4">
+                  
+                  <div class="flex items-center space-x-2 text-white  sm:flex">
+                      <img src="../image/Phone, Call.png" alt="Phone Icon" class="w-5 h-5 " />
+                      <p>Hotline: 1900 1806</p>
+                  </div>
+                  <a href="https://benhvienphuongdong.vn" class="flex items-center space-x-2 text-white">
+                      <img src="../image/Earth, Home, World.png" alt="World Icon" class="w-5 h-5" />
+                      <span>https://benhvienphuongdong.vn</span>
+                  </a>
+              </div>
             </section>
         </div>
+
+
+       <section>
+        <div class="">
+          <div class="flex flex-col items-center md:flex-row md:items-start  relative">
+              <div class="relative">
+                  <img src="./image/Group 9321.png" alt=""
+                      class="max-h-97 object-cover rounded-tr-[20px] w-full md:w-auto">
+                  <div class="md:absolute md:top-1/2 md:right-[-200px] md:transform md:-translate-y-1/2 
+                          sm:right-[-50px] right-0 bg-white shadow-lg rounded-2xl p-6 
+                          max-w-lg  w-full   px-4 sm:px-6">
+                      <h2 class="text-2xl font-bold text-gray-800">
+                          Bệnh viện Phương Đông tiên phong trong dịch vụ thai sản trọn gói
+                      </h2>
+                      <p class="text-gray-600 mt-4">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                          tale tincidunt tortor lobortis pretium nulla quis sem nullam rhoncus.
+                          Ornare et dui sit massa. Volutpat porta leo pulvinar adipiscing gestas
+                          metus.
+                      </p>
+                      <button class="register-btn relative inline-flex items-center px-4 sm:px-5 py-1 sm:py-2 
+                                  text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg 
+                                  rounded-full transition-all hover:from-orange-400 hover:to-orange-700 
+                                  active:scale-95 mt-10 text-sm">
+                          Đăng ký tư vấn
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+       </section>
     
+
+
+        
       
 
     
-
-
-      
-
 <!-- CƠ SỞ VẬT CHẤT  -->
 <section class="px-4">
     <div class="container flex flex-col md:flex-row items-center justify-between text-center md:text-left">
       <h2 class="text-2xl font-bold">Hình ảnh về cơ sở vật chất, trang thiết bị</h2>
   
       <!-- Nút điều hướng -->
-      <div class="flex gap-2 hidden md:flex relative z-10">
+      <div class="pt-5 flex gap-2  relative z-10">
         <button id="prevBtn1"
           class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:scale-110 hover:from-orange-400 hover:to-orange-700"
           aria-label="Trước">
@@ -463,107 +593,113 @@
 
 
 
-    <section class="container mx-auto max-w-screen-xl  px-5 pt-20  "> 
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center md:text-left">
-          Đội ngũ bác sĩ bệnh viện đa khoa Phương Đông
-        </h2>
-        <button 
-          class="relative inline-flex items-center px-4 py-2 text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg rounded-full transition-all hover:from-orange-400 hover:to-orange-700 active:scale-95 mt-4 md:mt-0 text-sm">
-          Tìm bác sĩ
-        </button>
+  <section class="py-12 px-4 bg-white max-w-[1408px] mx-auto ">
+    <div class="flex flex-col md:flex-row justify-between items-center ">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center md:text-left">
+        Đội ngũ bác sĩ bệnh viện đa khoa Phương Đông
+      </h2>
+      <button 
+        class="relative inline-flex items-center px-4 py-2 text-white bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg rounded-full transition-all hover:from-orange-400 hover:to-orange-700 active:scale-95 mt-4 md:mt-0 text-sm">
+        Tìm bác sĩ
+      </button>
+    </div>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pt-5">
+      <!-- BS 1 -->
+      <div class="flex flex-col md:flex-row items-center space-x-0 md:space-x-6">
+        <div class="relative">
+          <img src="../image/Group 9643.png" alt="">
+        </div>
+        <div class="mt-4 md:mt-0 text-center md:text-left">
+          <h3 class="text-lg font-bold text-gray-800">BS: NGUYỄN TRUNG CHÍNH</h3>
+          <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Giám đốc Bệnh viện Đa khoa Phương Đông</p>
+          <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
+          <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
+        </div>
+      </div>
+  
+      <!-- BS 2 -->
+      <div class="flex flex-col md:flex-row items-center space-x-0 md:space-x-6">
+        <div class="relative">
+          <img src="../image/Group 9644.png" alt="">
+        </div>
+        <div class="mt-4 md:mt-0 text-center md:text-left">
+          <h3 class="text-lg font-bold text-gray-800">BS: NGUYỄN HUY BẢO</h3>
+          <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương Đông</p>
+          <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
+          <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
+        </div>
+      </div>
+  
+      <!-- BS 3 -->
+      <div class="flex flex-col md:flex-row items-center md:space-x-6">
+        <div class="relative order-1 md:order-2">
+          <img src="../image/Group 9645.png" alt="">
+        </div>
+        <div class="mt-4 md:mt-0 order-2 md:order-1 text-center md:text-left">
+          <h3 class="text-lg font-bold text-gray-800">BS: TRẦN KINH TRANG</h3>
+          <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương Đông</p>
+          <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
+          <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
+        </div>
       </div>
       
   
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div class="flex items-center space-x-6">
-            <div class="relative">
-                <img src="../image/Group 9643.png" alt="">
-            </div>
-            <div>
-                <h3 class="text-lg font-bold text-gray-800">BS: NGUYỄN TRUNG CHÍNH</h3>
-                <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Giám đốc Bệnh viện Đa khoa Phương Đông
-                </p>
-                <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
-                <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
-            </div>
+      <!-- BS 4 -->
+
+      <div class="flex flex-col md:flex-row items-center md:space-x-6">
+        <div class="relative order-1 md:order-2">
+          <img src="../image/Group 9646.png" alt="">
         </div>
-        <!-- bs 2 -->
-        <div class="flex items-center space-x-6">
-            <div class="relative">
-                <img src="../image/Group 9644.png" alt="">
-            </div>
-            <div>
-                <h3 class="text-lg font-bold text-gray-800">BS: NGUYỄN HUY BẢO</h3>
-                <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương
-                    Đông</p>
-                <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
-                <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
-            </div>
+        <div class="mt-4 md:mt-0 order-2 md:order-1 text-center md:text-left">
+          <h3 class="text-lg font-bold text-gray-800">DS: NGUYỄN THỊ KIM YẾN</h3>
+          <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương Đông</p>
+          <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
+          <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
         </div>
-        <!-- bs 3 -->
-        <div class="flex items-center space-x-6">
-            <div>
-                <h3 class="text-lg font-bold text-gray-800">BS: TRẦN KINH TRANG</h3>
-                <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương
-                    Đông</p>
-                <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
-                <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
-            </div>
-            <div class="relative">
-                <img src="../image/Group 9645.png" alt="">
-            </div>
-        </div>
-        <!-- bs 4 -->
-        <div class="flex items-center space-x-6">
-            <div>
-                <h3 class="text-lg font-bold text-gray-800">DS: NGUYỄN THỊ KIM YẾN</h3>
-                <p class="text-sm text-gray-600">PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa Phương
-                    Đông</p>
-                <p class="text-sm text-gray-600 mt-2">Kinh nghiệm: 20 năm</p>
-                <p class="text-sm text-gray-600">Xếp hạng: ⭐⭐⭐⭐⭐</p>
-            </div>
-            <div class="relative">
-                <img src="../image/Group 9646.png" alt="">
-            </div>
-        </div>
+      </div>
+      
+
     </div>
   </section>
+  
+
 
   
-  <div class="container mx-auto max-w-screen-xl  px-5  ">
-    <div class="flex flex-col md:flex-row justify-between items-center mt-10 md:mt-20">
-        <div>
-            <img src="../image/Rectangle 6461.png" alt="" class="w-full h-auto object-cover mt-6 md:mt-0">
+<div class="container mx-auto max-w-screen-xl  px-5  ">
+  <div class="flex flex-col md:flex-row justify-between items-center md:mt-10 ">
+      <div>
+          <img src="../image/Rectangle 6461.png" alt="" class="w-full h-auto object-cover mt-6 md:mt-0">
 
-        </div>
-        <div class="bg-white p-6 ">
-            <h2 class="text-2xl font-bold text-gray-900">Chuyển dạ và sinh non có nguy hiểm?</h2>
-            <p class="text-gray-600 mt-4"><strong>Tính nguy hiểm của bệnh</strong><br>Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Sapien, nec morbi mauris.</p>
-            <p class="text-gray-600 mt-4"><strong>Các cấp độ</strong><br>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Id tortor odio posuere a cursus.</p>
-            <p class="text-gray-600 mt-4"><strong>Giải pháp</strong><br>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Sapien, nec morbi mauris.</p>
-        </div>
-    </div>
+      </div>
+      <div class="bg-white p-6 ">
+          <h2 class="text-2xl font-bold text-gray-900">Chuyển dạ và sinh non có nguy hiểm?</h2>
+          <p class="text-gray-600 mt-4"><strong>Tính nguy hiểm của bệnh</strong><br>Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Sapien, nec morbi mauris.</p>
+          <p class="text-gray-600 mt-4"><strong>Các cấp độ</strong><br>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Id tortor odio posuere a cursus.</p>
+          <p class="text-gray-600 mt-4"><strong>Giải pháp</strong><br>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sapien, nec morbi mauris.</p>
+      </div>
+  </div>
 
-    <!-- Phần 2 -->
-    <div class="max-w-6xl ml-1 mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-        <div>
-            <h2 class="text-2xl font-bold text-gray-900">Dấu hiệu nhận biết chuyển dạ và sinh non:</h2>
-            <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi
-                mauris, turpis fringilla condimentum urna sagittis est.</p>
-            <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi
-                mauris, turpis fringilla condimentum urna sagittis est.</p>
-            <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, odio in
-                turpis nunc mollis diam viverra dictum.</p>
-        </div>
-        <div class="">
-            <img src="../image//Rectangle 6463.png" alt="" class="w-full h-auto  object-cover -mt-6 md:-mt-12">
-        </div>
-    </div>
+  <!-- Phần 2 -->
+  <div class="max-w-6xl ml-1 mx-auto mt-5 grid grid-cols-1 md:grid-cols-2 gap-6 items-center ">
+      <div>
+          <h2 class="text-2xl font-bold text-gray-900">Dấu hiệu nhận biết chuyển dạ và sinh non:</h2>
+          <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi
+              mauris, turpis fringilla condimentum urna sagittis est.</p>
+          <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi
+              mauris, turpis fringilla condimentum urna sagittis est.</p>
+          <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, odio in
+              turpis nunc mollis diam viverra dictum.</p>
+      </div>
+      <div class="flex sm:item-center">
+          <img src="../image/Rectangle 6463.png" alt="" class="w-full h-auto  object-cover  -mt-6 md:-mt-12 pl-10 ">
+      </div>
+  </div>
 </div>
+    
 
 
 
@@ -629,10 +765,10 @@
 </div>
   
     <section
-      class="container mx-auto max-w-screen-xl  grid grid-cols-1 md:grid-cols-2 items-center  py-12 px-6 gap-8"
+      class="container mx-auto max-w-screen-xl  grid grid-cols-1 md:grid-cols-2 items-center   px-6 gap-8"
     >
       <!-- Text Content -->
-      <div class="space-y-4">
+      <div class="space-y-4 ">
         <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
           Tại sao bạn nên chọn gói dịch vụ thai sản tại bệnh viện Phương Đông
         </h2>
@@ -707,8 +843,8 @@
         suscipit mus.
       </p>
     
-      <div class="flex w-full h-80">
-        <div class="flex flex-col items-start text-left w-1/4">
+      <div class="flex w-full  ">
+        <div class="flex flex-col items-start text-left w-1/4  ">
           <img src="../image/hqua1.png" alt="Gây sảy thai" class="w-16 h-16 mb-4" />
           <h3 class="font-semibold">Gây sảy thai</h3>
           <p class="text-gray-600 text-sm hidden md:block">
@@ -716,7 +852,7 @@
           </p>
         </div>
     
-        <div class="flex flex-col items-start text-left w-1/4 mt-44">
+        <div class="flex flex-col items-start text-left w-1/4 sm:mt-44 ">
           <img src="../image/hqua2.png" alt="Gây sảy thai" class="w-16 h-16 mb-4" />
           <h3 class="font-semibold">Gây sảy thai</h3>
           <p class="text-gray-600 text-sm hidden md:block">
@@ -726,34 +862,37 @@
     
         <div class="flex flex-col items-start text-left w-1/4">
           <img src="../image/hqua3.png" alt="Nguy hiểm cho cả hai mẹ con" class="w-16 h-16 mb-4" />
-          <h3 class="font-semibold">Nguy hiểm cho cả hai mẹ con</h3>
+          <h3 class="font-semibold">Gây sảy thai</h3>
           <p class="text-gray-600 text-sm hidden md:block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis 
           </p>
         </div>
     
-        <div class="flex flex-col items-start text-left w-1/4 mt-44">
+        <div class="flex flex-col items-start text-left w-1/4 sm:mt-44">
           <img src="../image/hqua4.png" alt="Nguy hiểm cho cả hai mẹ con" class="w-16 h-16 mb-4" />
-          <h3 class="font-semibold">Nguy hiểm cho cả hai mẹ con</h3>
+          <h3 class="font-semibold">Gây sảy thai</h3>
           <p class="text-gray-600 text-sm hidden md:block">
            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis 
           </p>
         </div>
       </div>
     </section>
+
+
+    
     
     </div>
 
      <!-- FOOTER  -->
-     <footer
-      class="relative bg-gradient-to-r from-green-400 to-blue-500 text-white clip-footer py-16 min-h-[400px]"
+    <footer
+      class="relative bg-gradient-to-r from-green-400 to-blue-500 text-white clip-footer lg:py-16  min-h-[400px] "
     >
       <div
-        class="max-w-[1408px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10 pt-20 mr-1"
+        class="max-w-[1408px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10 pt-20 "
       >
         <!-- Cột 1: Logo và mô tả -->
         <div>
-          <img src="image/Logo 1.png" alt="Phuong Dong" class="w-32 mb-4" />
+          <img src="image/Logo 1.png" alt="Phuong Dong" class=" mb-4 " />
           <h3 class="font-semibold">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h3>
           <p class="text-sm text-gray-200">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad
@@ -800,12 +939,12 @@
             ></a>
           </div>
           <img
-            src="./image/Frame 9352.png"
+            src="/image/Frame 9352.png"
             alt="Bộ Công Thương"
             class="w-24 mt-4"
           />
           <img
-            src="./image/thong-bao-website-voi-bo-cong-thuong_grande_waifu2x_photo_noise3_scale_tta_1 1.png"
+            src="/image/thong-bao-website-voi-bo-cong-thuong_grande_waifu2x_photo_noise3_scale_tta_1 1.png"
             alt="Bộ Công Thương"
             class="w-24 mt-4"
           />

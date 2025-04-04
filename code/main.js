@@ -6,43 +6,64 @@ document.addEventListener("DOMContentLoaded", function () {
 const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 const closeBtn = document.getElementById("close-btn");
+const overlay = document.getElementById("overlay");
 
 // Mở menu khi nhấn vào nút menu-toggle
 menuToggle.addEventListener("click", function () {
   mobileMenu.classList.add("show");
+  overlay.classList.add("show");  // Hiển thị lớp phủ mờ
 });
 
 // Đóng menu khi nhấn vào nút close-btn
 closeBtn.addEventListener("click", function () {
   mobileMenu.classList.remove("show");
+  overlay.classList.remove("show");  // Ẩn lớp phủ mờ
 });
+
+// Đóng menu khi nhấn vào lớp phủ mờ
+overlay.addEventListener("click", function () {
+  mobileMenu.classList.remove("show");
+  overlay.classList.remove("show");  // Ẩn lớp phủ mờ
+});
+
 
 // ✅ Cài đặt Swiper (Tự động lướt và hiệu ứng nhanh)
 function setupSwiper() {
   const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    slidesPerView: 1,
+    loop: false,
+    slidesPerView: 1, // Hiển thị 1 slide trên màn hình nhỏ
     spaceBetween: 8,
     allowTouchMove: true,
-    autoplay: {
-      delay: 2500, // Lướt sau 2.5 giây
-      disableOnInteraction: false
-    },
+    centeredSlides: true, // Căn giữa slide
+    // autoplay: {
+    //   delay: 2500, // Lướt sau 2.5 giây
+    //   disableOnInteraction: false
+    // },
     speed: 300,
     navigation: {
       nextEl: "#nextBtn",
       prevEl: "#prevBtn",
     },
     breakpoints: {
-      768: { slidesPerView: 2, spaceBetween: 12 },
-      1024: { slidesPerView: 3, spaceBetween: 16 }
+      768: { 
+        slidesPerView: 2, 
+        spaceBetween: 12,
+        centeredSlides: false, // Tắt căn giữa trên màn hình lớn hơn
+      },
+      1024: { 
+        slidesPerView: 3, 
+        spaceBetween: 16,
+        centeredSlides: false, // Tắt căn giữa trên màn hình lớn hơn
+      }
     }
   });
 
+  // Thêm hiệu ứng cho các nút điều hướng
   document.querySelectorAll("#prevBtn1, #nextBtn1").forEach(button => {
     button.classList.add("transition-transform", "duration-150", "active:scale-90");
   });
 }
+
 
 // ✅ Hiển thị thông báo khi nhấn nút đăng ký
 function setupAlertButtons() {
@@ -84,3 +105,5 @@ function closePopup() {
   document.getElementById('video-popup').classList.add('hidden');
   document.getElementById('youtube-video').src = "";
 }
+
+

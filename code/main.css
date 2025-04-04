@@ -1,4 +1,16 @@
 
+/* Lớp phủ mờ phía sau menu */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Màu mờ đen */
+  z-index: 5;
+  display: none;
+}
+
 #mobile-menu {
   display: none;
   position: fixed;
@@ -13,12 +25,16 @@
   transform: translateX(100%);
 }
 
-
-
 #mobile-menu.show {
   display: block;
   transform: translateX(0);
 }
+
+#overlay.show {
+  display: block;
+}
+
+
 
 
 .close-btn {
@@ -91,5 +107,16 @@
   .swiper-slide {
     display: flex;
     justify-content: center; /* Căn giữa ảnh */
+  }
+}
+
+
+.clip-footer {
+  overflow: hidden; /* Ẩn phần bị cong */
+}
+
+@media (min-width: 768px) { /* Chỉ áp dụng khi màn hình to */
+  .clip-footer {
+    clip-path: ellipse(100% 80% at 50% 100%);
   }
 }
