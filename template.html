@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="main.css" rel="stylesheet" />
+    <link href="./code/main.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -17,7 +17,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- HEADER  -->
-    <div class="container">
+    <div class="container  mx-auto max-w-screen-xl  px-5">
       <header class="flex justify-between items-center lg:px-5 py-4 bg-white shadow-md">
         <div class="logo">
           <img src="../image/Logo 1.png" alt="Phương Đông" class="h-12" />
@@ -88,10 +88,10 @@
     
 
   <!-- THAI SẢN  -->
-  <div class="container ">
+  <div class="px-5 container  mx-auto max-w-screen-xl ">
     <section class="bg-white rounded-lg  py-4 lg:pl-5">
       <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
-        <div class="">
+        <div class=" ">
           <h2 class="md:text-2xl font-bold text-gray-800 py-4">
             Chương trình ưu đãi:
           </h2>
@@ -195,7 +195,7 @@
     </section>
   </div>
 
-     <section class="container">
+     <section class="container  mx-auto max-w-screen-xl  px-5">
       <div
       class=" lg:pt-8 sm:pt-6 px-6 grid grid-cols-1 md:grid-cols-2 gap-6  items-center "
     >
@@ -259,8 +259,8 @@
       </section> -->
    
     
-      <div class="max-w-full h-auto bg-gradient-to-r from-[#50C577] via-[#C4EACE] to-[#B5E8FD] my-20 py-20 px-10">
-        <div class="container mx-auto bg-white rounded-2xl">
+      <div class=" max-w-full h-auto bg-gradient-to-r from-[#50C577] via-[#C4EACE] to-[#B5E8FD] my-20 py-20 px-10">
+        <div class="container mr-7 mx-auto max-w-screen-xl  px-5  bg-white rounded-2xl">
             <section class="max-w-[1456px] rounded-2xl ">
               <div class="grid grid-cols-1 sm:grid-cols-[auto,1fr] items-center justify-center text-center">
                 <img src="../image/Logo 1.png" alt="Logo" class="h-10 mx-auto mb-4 sm:mb-0" />
@@ -382,103 +382,88 @@
       
 
 <!-- CƠ SỞ VẬT CHẤT  -->
-<section class=" px-4">
-  <div class="container flex flex-col md:flex-row items-center justify-between text-center md:text-left">
-    <h2 class="text-2xl font-bold ">
-      Hình ảnh về cơ sở vật chất, trang thiết bị
-    </h2>
-
-    <!-- Nút điều hướng -->
-    <div class="flex gap-2 hidden md:flex relative z-10">
-      <button id="prevBtn1"
-        class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:scale-110 hover:from-orange-400 hover:to-orange-700"
-        aria-label="Trước">
-        ❮
-      </button>
-      <button id="nextBtn1"
-        class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:scale-110 hover:from-orange-400 hover:to-orange-700"
-        aria-label="Sau">
-        ❯
-      </button>
+<section class="px-4">
+    <div class="container flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+      <h2 class="text-2xl font-bold">Hình ảnh về cơ sở vật chất, trang thiết bị</h2>
+  
+      <!-- Nút điều hướng -->
+      <div class="flex gap-2 hidden md:flex relative z-10">
+        <button id="prevBtn1"
+          class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:scale-110 hover:from-orange-400 hover:to-orange-700"
+          aria-label="Trước">
+          ❮
+        </button>
+        <button id="nextBtn1"
+          class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-orange-300 to-orange-600 shadow-lg text-white text-xl transition-all duration-300 hover:scale-110 hover:from-orange-400 hover:to-orange-700"
+          aria-label="Sau">
+          ❯
+        </button>
+      </div>
     </div>
-  </div>
-
-  <!-- SwiperJS Slider (Đổi tên Swiper thành equipmentSwiper) -->
-  <div class="swiper equipmentSwiper mt-10">
-    <div class="swiper-wrapper">
-      <!-- Swiper Slide 1 -->
-      <div class="swiper-slide">
-        <img src="../image/Rectangle 6455.png" alt="Image 1"
-          class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-      </div>
-      <!-- Swiper Slide 2 -->
-      <div class="swiper-slide">
-        <img src="../image/Rectangle 6456.png" alt="Image 2"
-          class="w-full object-cover rounded-3xl max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-      </div>
-      <!-- Swiper Slide 3 -->
-      <div class="swiper-slide">
-        <img src="../image/Rectangle 6457.png" alt="Image 3"
-          class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-      </div>
-      <!-- Swiper Slide 4 -->
-      <div class="swiper-slide">
-        <img src="../image/Rectangle 6459.png" alt="Image 4"
-          class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-      </div>
-      <!-- Swiper Slide 5 -->
-      <div class="swiper-slide">
-        <img src="../image/Rectangle 6460.png" alt="Image 5"
-          class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-      </div>
-      <!-- Swiper Slide 6 -->
-      <div class="swiper-slide">
-        <img src="../image/Rectangle 6462.png" alt="Image 6"
-          class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-      </div>
+  
+    <!-- SwiperJS Slider (Đổi tên Swiper thành equipmentSwiper) -->
+    <div class="swiper equipmentSwiper mt-10">
+      <div class="swiper-wrapper">
+        <!-- Các slide được thêm vào tại đây -->
+        <div class="swiper-slide">
+          <img src="../image/Rectangle 6455.png" alt="Image 1"
+            class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="../image/Rectangle 6456.png" alt="Image 2"
+            class="w-full object-cover rounded-3xl max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="../image/Rectangle 6457.png" alt="Image 3"
+            class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="../image/Rectangle 6459.png" alt="Image 4"
+            class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="../image/Rectangle 6460.png" alt="Image 5"
+            class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="../image/Rectangle 6462.png" alt="Image 6"
+            class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
 
 
-       <!-- Swiper Slide 1 -->
-       <div class="swiper-slide">
-        <img src="../image/Rectangle 6455.png" alt="Image 1"
-          class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        <div class="swiper-slide">
+            <img src="../image/Rectangle 6455.png" alt="Image 1"
+              class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+          </div>
+          <div class="swiper-slide">
+            <img src="../image/Rectangle 6456.png" alt="Image 2"
+              class="w-full object-cover rounded-3xl max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+          </div>
+          <div class="swiper-slide">
+            <img src="../image/Rectangle 6457.png" alt="Image 3"
+              class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+          </div>
+          <div class="swiper-slide">
+            <img src="../image/Rectangle 6459.png" alt="Image 4"
+              class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+          </div>
+          <div class="swiper-slide">
+            <img src="../image/Rectangle 6460.png" alt="Image 5"
+              class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+          </div>
+          <div class="swiper-slide">
+            <img src="../image/Rectangle 6462.png" alt="Image 6"
+              class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+          </div>
       </div>
-      <!-- Swiper Slide 2 -->
-      <div class="swiper-slide">
-        <img src="../image/Rectangle 6456.png" alt="Image 2"
-          class="w-full object-cover rounded-3xl max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-      </div>
-      <!-- Swiper Slide 3 -->
-      <div class="swiper-slide">
-        <img src="../image/Rectangle 6457.png" alt="Image 3"
-          class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-      </div>
-      <!-- Swiper Slide 4 -->
-      <div class="swiper-slide">
-        <img src="../image/Rectangle 6459.png" alt="Image 4"
-          class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-      </div>
-      <!-- Swiper Slide 5 -->
-      <div class="swiper-slide">
-        <img src="../image/Rectangle 6460.png" alt="Image 5"
-          class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-      </div>
-      <!-- Swiper Slide 6 -->
-      <div class="swiper-slide">
-        <img src="../image/Rectangle 6462.png" alt="Image 6"
-          class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-      </div>
-      
     </div>
-  </div>
-</div>
-</section>
+  </section>
+  
 
 
 
 
-
-    <section class="py-12 px-4 bg-white max-w-[1408px] mx-auto "> 
+    <section class="container mx-auto max-w-screen-xl  px-5 pt-20  "> 
       <div class="flex flex-col md:flex-row justify-between items-center">
         <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center md:text-left">
           Đội ngũ bác sĩ bệnh viện đa khoa Phương Đông
@@ -549,7 +534,7 @@
   <div class="container mx-auto max-w-screen-xl  px-5  ">
     <div class="flex flex-col md:flex-row justify-between items-center mt-10 md:mt-20">
         <div>
-            <img src="./image/Rectangle 6461.png" alt="" class="w-full h-auto object-cover mt-6 md:mt-0">
+            <img src="../image/Rectangle 6461.png" alt="" class="w-full h-auto object-cover mt-6 md:mt-0">
 
         </div>
         <div class="bg-white p-6 ">
@@ -564,7 +549,7 @@
     </div>
 
     <!-- Phần 2 -->
-    <div class="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+    <div class="max-w-6xl ml-1 mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <div>
             <h2 class="text-2xl font-bold text-gray-900">Dấu hiệu nhận biết chuyển dạ và sinh non:</h2>
             <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi
@@ -575,13 +560,14 @@
                 turpis nunc mollis diam viverra dictum.</p>
         </div>
         <div class="">
-            <img src="../image/Rectangle 6463.png" alt="" class="w-full h-auto  object-cover -mt-6 md:-mt-12">
+            <img src="../image//Rectangle 6463.png" alt="" class="w-full h-auto  object-cover -mt-6 md:-mt-12">
         </div>
     </div>
 </div>
 
 
-  <section class="max-w-[1408px] mx-auto bg-white p-6 rounded-lg flex flex-col md:flex-row items-center">
+
+  <section class="container mx-auto max-w-screen-xl pt-20  px-5 mx-auto bg-white p-6 rounded-lg flex flex-col md:flex-row items-center">
     <div class="relative w-full md:w-1/2">
       <div class="relative w-full" style="padding-top: 56.25%;" id="video-container">
         <!-- Thumbnail ảnh của video -->
@@ -605,7 +591,7 @@
       </div>
     </div>
   
-    <div class="w-full md:w-1/2 p-6">
+    <div class="w-full md:w-1/2 p-6  ">
       <h2 class="text-2xl font-bold text-gray-800">
         Giải pháp an toàn hãy lựa chọn dịch vụ thai sản trọn gói tại bệnh viện Phương Đông
       </h2>
@@ -628,6 +614,8 @@
     </div>
   </section>
 
+
+
   <!-- Popup Video -->
 <div id="video-popup" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center">
   <button class="absolute top-3 right-3 text-white p-4 bg-gray-800 bg-opacity-50 rounded-full text-2xl" onclick="closePopup()">
@@ -641,7 +629,7 @@
 </div>
   
     <section
-      class="grid grid-cols-1 md:grid-cols-2 items-center max-w-[1408px] mx-auto py-12 px-6 gap-8"
+      class="container mx-auto max-w-screen-xl  grid grid-cols-1 md:grid-cols-2 items-center  py-12 px-6 gap-8"
     >
       <!-- Text Content -->
       <div class="space-y-4">
@@ -706,7 +694,7 @@
         />
       </div>
     </section>
-    <section class="max-w-[1408px] mx-auto py-12 px-6">
+    <section class="container mx-auto max-w-screen-xl   py-12 px-6">
       <h2 class="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-6">
         Hậu quả chuyển dạ và sinh non nếu không điều trị kịp thời
       </h2>
@@ -757,57 +745,82 @@
     </div>
 
      <!-- FOOTER  -->
-     <footer class="bg-gradient-to-r from-[#1CAB55] to-[#04A4EC] text-white py-10">
-      <div class=" mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row justify-between">
-          <!-- Logo và mô tả -->
-          <div class="md:w-1/4">
-              <img src="../image/Logo 1 (1).png" alt="Logo Phương Đông" class="w-40 mb-4">
-              <h2 class="font-bold text-lg">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h2>
-              <p class="text-sm opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna sit morbi
-                  nisl contale consectetur pellentesque ullamcorper con viverra id cursus hendreritenim ultrices.</p>
-          </div>
+     <footer
+      class="relative bg-gradient-to-r from-green-400 to-blue-500 text-white clip-footer py-16 min-h-[400px]"
+    >
+      <div
+        class="max-w-[1408px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10 pt-20 mr-1"
+      >
+        <!-- Cột 1: Logo và mô tả -->
+        <div>
+          <img src="image/Logo 1.png" alt="Phuong Dong" class="w-32 mb-4" />
+          <h3 class="font-semibold">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h3>
+          <p class="text-sm text-gray-200">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad
+            minim veniam.
+          </p>
+        </div>
 
-          <!-- Thông tin liên hệ -->
-          <div class="md:w-1/4">
-              <h3 class="font-semibold text-lg">Thông tin liên hệ</h3>
-              <p class="text-sm mt-2">Địa chỉ: Số 9, Phố Viên, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội</p>
-              <p class="text-sm">Email: <a href="mailto:bvphuongdong@phuongdonghospital.vn"
-                      class="underline">bvphuongdong@phuongdonghospital.vn</a></p>
-              <p class="text-sm">info.benhvienphuongdong@gmail.com</p>
-              <p class="text-sm font-bold">Tổng đài tư vấn: 1900 1806</p>
-          </div>
+        <!-- Cột 2: Thông tin liên hệ -->
+        <div>
+          <h3 class="font-semibold mb-3">Thông tin liên hệ</h3>
+          <p class="text-sm">
+            Địa chỉ: Số 9, Phố Viên, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội
+          </p>
+          <p class="text-sm">
+            Email:
+            <a href="mailto:benhvienphuongdong@gmail.com" class="text-gray-300"
+              >benhvienphuongdong@gmail.com</a
+            >
+          </p>
+          <p class="text-sm">Tổng đài tư vấn: 19001806</p>
+        </div>
 
-          <!-- Giờ làm việc -->
-          <div class="md:w-1/4">
-              <h3 class="font-semibold text-lg">Giờ làm việc</h3>
-              <p class="text-sm mt-2">Từ 7:00 - 19:00 từ Thứ 2 đến CN</p>
-              <p class="text-sm">Cấp cứu 24/7: 0833 015 115</p>
-              <p class="text-sm">Hotline Tiêm chủng: 0911 615 115</p>
-              <p class="text-sm font-bold">Hotline Hỗ trợ khách hàng: 1900 1806</p>
-          </div>
+        <!-- Cột 3: Giờ làm việc -->
+        <div>
+          <h3 class="font-semibold mb-3">Giờ làm việc</h3>
+          <p class="text-sm">Từ 7:00 - 19:00 từ Thứ 2 đến CN</p>
+          <p class="text-sm">Cấp cứu 24/7: 083 015 1115</p>
+          <p class="text-sm">Hotline Tiêm chủng: 0911 615 115</p>
+          <p class="text-sm">Hotline Hỗ trợ khách hàng: 1900 1806</p>
+        </div>
 
-          <!-- Theo dõi chúng tôi -->
-          <div class="md:w-1/4">
-              <h3 class="font-semibold text-lg">Theo dõi chúng tôi</h3>
-              <div class="flex space-x-4 mt-3">
-                  <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
-                  <a href="#" class="text-white text-2xl"><i class="fab fa-youtube"></i></a>
-                  <a href="#" class="text-white text-2xl"><i class="fab fa-tiktok"></i></a>
-              </div>
-              <img src="../image//thong-bao-website-voi-bo-cong-thuong_grande_waifu2x_photo_noise3_scale_tta_1 1.png"
-                  alt="Đã thông báo Bộ Công Thương" class="w-32 mt-4">
+        <!-- Cột 4: Theo dõi -->
+        <div>
+          <h3 class="font-semibold mb-3">Theo dõi chúng tôi</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-white text-lg"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="text-white text-lg"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="#" class="text-white text-lg"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
+          <img
+            src="./image/Frame 9352.png"
+            alt="Bộ Công Thương"
+            class="w-24 mt-4"
+          />
+          <img
+            src="./image/thong-bao-website-voi-bo-cong-thuong_grande_waifu2x_photo_noise3_scale_tta_1 1.png"
+            alt="Bộ Công Thương"
+            class="w-24 mt-4"
+          />
+        </div>
       </div>
 
-
-      <div class="text-center text-sm mt-6 opacity-75">© Copyright 2022 Bệnh Viện Đa khoa Phương Đông. All rights
-          reserved</div>
-  </footer>
-
-
+      <div class="text-center text-sm text-gray-200 mt-6">
+        © Copyright 2022 Bệnh Viện Đa Khoa Phương Đông. All rights reserved.
+      </div>
+    </footer>
 
 
-   <script src="./main.js"></script>
+
+
+   <script src="./code/main.js"></script>
    
   </body>
 </html>

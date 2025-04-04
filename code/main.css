@@ -72,6 +72,24 @@
   padding-left: 15px; 
   padding-right: 15px; 
 }
+@media screen and (max-width: 640px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: block; /* Hiển thị nút điều hướng */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+  .swiper-button-prev {
+    left: 10px;
+  }
 
-
-
+  /* Đảm bảo rằng ảnh hiển thị căn giữa trên màn hình nhỏ */
+  .swiper-slide {
+    display: flex;
+    justify-content: center; /* Căn giữa ảnh */
+  }
+}
