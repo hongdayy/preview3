@@ -107,9 +107,9 @@ function closePopup() {
 }
 
 
-  const btnOpen = document.getElementById("btnOpenPopup");
+  const btnOpen = document.getElementById("btnOpenPopup1");
   const btnClose = document.getElementById("btnClosePopup");
-  const popup = document.getElementById("popup");
+  const popup = document.getElementById("popup1");
   const btnRegister = document.getElementById("btnRegister");
   const toast = document.getElementById("successToast");
 
