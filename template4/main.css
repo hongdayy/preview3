@@ -1,0 +1,128 @@
+/* Mobile menu */
+.container {
+    margin: 0 auto;
+    padding-left: 15px; 
+    padding-right: 15px; 
+  }
+  
+#mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #2e7d32;
+    z-index: 50;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+  }
+  header {
+    position: relative; /* cần thiết để z-index hoạt động */
+    z-index: 10;
+  }
+  
+  #mobile-menu.show {
+    display: block;
+    transform: translateX(0);
+  }
+  
+  #overlay.show {
+    display: block;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #mobile-menu .menu-content nav ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  #mobile-menu .menu-content nav ul li a:hover {
+    background-color: #1b5e20;
+    color: #fff;
+  }
+  
+  #mobile-menu .menu-content nav ul li {
+    margin-top: 20px;
+  }
+  
+  /* Gạch chân tùy chỉnh khi hover */
+  nav a {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #3ebf76;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #3ebf76 !important;
+  }
+  
+  nav a:hover::after {
+    opacity: 1;
+  }
+  
+  /* Nền cong */
+ header {
+  position: relative;
+  z-index: 50;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+    margin-top: -40px; /* Đẩy section lên gần header hơn */
+    padding-top: 0;     /* Xóa khoảng thừa nếu có */
+  }
+  
+
+  .curved-bg {
+    /* Các thuộc tính cũ */
+    position: relative;
+    z-index: 0;
+    background: linear-gradient(90deg, #50C577 0%, #2DBEFC 100%);
+    border-top-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+  
+    margin-top: -30px; /* ✅ Thêm dòng này để đẩy lên trên */
+  }
+  
+  
+  
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Ẩn scroll ngang */
+  }
+  

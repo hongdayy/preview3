@@ -7,6 +7,8 @@
     <link href="./code/main.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <title></title>
@@ -97,7 +99,7 @@
     <section class="bg-white rounded-lg   py-4 md:pl-5 ">
       <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
         <div class=" container  mx-auto max-w-screen-xl md:ml-20 md:pt-5">
-          <h2 class="md:text-3xl font-semibold text-gray-800 py-4">
+          <h2 class="text-3xl font-semibold text-gray-800 md:py-4">
             Chương trình ưu đãi:
           </h2>
           <p class="text-gray-600 mt-2 text-sm md:text-base">
@@ -116,177 +118,454 @@
         </div>
   
         <!-- Swiper Section -->
-        <div class="col-span-2 w-full pt-10 lg:ml-5  ">
+        <div class="col-span-2 w-full md:pt-10 lg:ml-5  ">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <!-- Swiper Slide 1 -->
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all  ">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
                 <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
+              
                 </div>
               </div>
+              
+              
+
+            
+            
+              
 
               
   
               <!-- Swiper Slide 2 -->
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
                 <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
+              
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
                 <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
+              
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
                 <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
+              
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
-                <img src="./image/Rectangle 6447 (1).png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
+                <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
+              
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
                 <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
+              
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
                 <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
-                </div>
-              </div>
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
-                <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
-                    Đăng ký nhận ưu đãi
-                  </button>
-                </div>
-              </div>
-
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
-                <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
-                    Đăng ký nhận ưu đãi
-                  </button>
+              
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all   ">
+
+                <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
                 <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px]  flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
+              
+                </div>
+              </div>
+
+
+              
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
+                <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                    Đăng ký nhận ưu đãi
+                  </button>
+              
+                </div>
+              </div>
+
+
+               <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
+                <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+                    Đăng ký nhận ưu đãi
+                  </button>
+              
                 </div>
               </div>
   
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all duration-300 ">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
                 <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
+              
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all duration-300 ">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
                 <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
+              
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all duration-300 ">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
                 <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
+              
                 </div>
               </div>
 
-              <div class="swiper-slide bg-white rounded-xl  flex flex-col w-full max-w-xs mx-auto transition-all duration-300 ">
+              <div class="swiper-slide bg-white rounded-xl flex flex-col w-full max-w-xs mx-auto transition-all">
                 <img src="./image/Rectangle 6447.png" alt="Ưu đãi" class="w-full h-auto object-contain rounded-tl-[20px]">
-                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] shadow-lg flex flex-col items-center transition-all duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:text-white">
-                  <p class="text-lg font-light">Ưu đãi 50%</p>
-                  <p class="text-sm font-bold">Gói khám thai tổng quát</p>
-                  <p class="text-xs mt-2 mb-4">Lorem ipsum dolor sit amet.</p>
-                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469] py-2 rounded-full font-bold max-w-[90%] transition-all duration-300  hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
+              
+                <!-- Thẻ cha có group -->
+                <div class="relative -top-4 w-full p-4 text-black text-center bg-white rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center group hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 transition-all duration-300">
+                  
+                  <!-- Tiêu đề với gradient + font Arima -->
+                  <p class="text-2xl font-semibold bg-gradient-to-r from-[#26BA5F] via-[#26BA5F] to-[#08B2FB] bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+                     style="font-family: 'Arima', cursive;">
+                    Ưu đãi 50%
+                  </p>
+              
+                  <!-- Gói khám, thêm transition-all -->
+                  <p class="text-[18px] font-semibold text-gray-800 transition-all duration-300 group-hover:text-white">
+                    Gói khám thai tổng quát
+                  </p>
+              
+                  <!-- Lorem, thêm y chang -->
+                  <p class="text-sm text-gray-600 mt-2 mb-4 transition-all duration-300 group-hover:text-white">
+                    Lorem ipsum dolor sit amet tarancebe consectetur adipiscing elit turpis.
+                  </p>
+              
+                  <!-- Nút -->
+                  <button class="register-btn w-full bg-white text-orange-500 border-2 border-[#FFB469]
+                   py-2 rounded-full font-bold max-w-[90%] transition-all duration-300 hover:bg-[linear-gradient(180deg,#FFB469_0%,#E57709_100%)] hover:border-[#E57709] hover:text-white shadow-lg">
                     Đăng ký nhận ưu đãi
                   </button>
+              
                 </div>
               </div>
 
@@ -741,55 +1020,54 @@
       <div class="swiper-wrapper">
         <!-- Các slide được thêm vào tại đây -->
         <div class="swiper-slide">
-          <img src="../image/Rectangle 6455.png" alt="Image 1"
+          <img src="./image/Rectangle 6455.png" alt="Image 1"
             class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
         </div>
         <div class="swiper-slide">
-          <img src="../image/Rectangle 6456.png" alt="Image 2"
+          <img src="./image/Rectangle 6456.png" alt="Image 2"
             class="w-full object-cover rounded-3xl max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
         </div>
         <div class="swiper-slide">
-          <img src="../image/Rectangle 6457.png" alt="Image 3"
+          <img src="./image/Rectangle 6457.png" alt="Image 3"
             class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
         </div>
         <div class="swiper-slide">
-          <img src="../image/Rectangle 6459.png" alt="Image 4"
+          <img src="./image/Rectangle 6459.png" alt="Image 4"
             class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
         </div>
         <div class="swiper-slide">
-          <img src="../image/Rectangle 6460.png" alt="Image 5"
+          <img src="./image/Rectangle 6460.png" alt="Image 5"
             class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
         </div>
         <div class="swiper-slide">
-          <img src="../image/Rectangle 6462.png" alt="Image 6"
+          <img src="./image/Rectangle 6462.png" alt="Image 6"
             class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
         </div>
 
-
         <div class="swiper-slide">
-            <img src="../image/Rectangle 6455.png" alt="Image 1"
-              class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-          </div>
-          <div class="swiper-slide">
-            <img src="../image/Rectangle 6456.png" alt="Image 2"
-              class="w-full object-cover rounded-3xl max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-          </div>
-          <div class="swiper-slide">
-            <img src="../image/Rectangle 6457.png" alt="Image 3"
-              class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-          </div>
-          <div class="swiper-slide">
-            <img src="../image/Rectangle 6459.png" alt="Image 4"
-              class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-          </div>
-          <div class="swiper-slide">
-            <img src="../image/Rectangle 6460.png" alt="Image 5"
-              class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-          </div>
-          <div class="swiper-slide">
-            <img src="../image/Rectangle 6462.png" alt="Image 6"
-              class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
-          </div>
+          <img src="./image/Rectangle 6455.png" alt="Image 1"
+            class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/Rectangle 6456.png" alt="Image 2"
+            class="w-full object-cover rounded-3xl max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/Rectangle 6457.png" alt="Image 3"
+            class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/Rectangle 6459.png" alt="Image 4"
+            class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/Rectangle 6460.png" alt="Image 5"
+            class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/Rectangle 6462.png" alt="Image 6"
+            class="w-full object-cover rounded-lg max-w-[235px] h-[390px] md:max-w-[235px] md:h-[390px]">
+        </div>
       </div>
     </div>
   </section>
@@ -799,10 +1077,6 @@
 
 
 
-
-
-
-  
   <section class="py-12 px-4 bg-white container mx-auto max-w-screen-xl ">
     <div class="flex flex-col md:flex-row justify-between items-center ">
       <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center md:text-left">
@@ -819,7 +1093,7 @@
       <!-- BS 1 -->
       <div class="flex flex-col md:flex-row items-center space-x-0 md:space-x-6">
         <div class="relative">
-          <img src="../image/Group 9643.png" alt="">
+          <img src="./image/Group 9643.png" alt="">
         </div>
         <div class="mt-4 md:mt-0 text-center md:text-left">
           <h3 class="text-lg font-bold text-gray-800">BS: NGUYỄN TRUNG CHÍNH</h3>
@@ -832,7 +1106,7 @@
       <!-- BS 2 -->
       <div class="flex flex-col md:flex-row items-center space-x-0 md:space-x-6">
         <div class="relative">
-          <img src="../image/Group 9644.png" alt="">
+          <img src="./image/Group 9644.png" alt="">
         </div>
         <div class="mt-4 md:mt-0 text-center md:text-left">
           <h3 class="text-lg font-bold text-gray-800">BS: NGUYỄN HUY BẢO</h3>
@@ -845,7 +1119,7 @@
       <!-- BS 3 -->
       <div class="flex flex-col md:flex-row items-center md:space-x-6">
         <div class="relative order-1 md:order-2">
-          <img src="../image/Group 9645.png" alt="">
+          <img src="./image/Group 9645.png" alt="">
         </div>
         <div class="mt-4 md:mt-0 order-2 md:order-1 text-center md:text-left">
           <h3 class="text-lg font-bold text-gray-800">BS: TRẦN KINH TRANG</h3>
@@ -860,7 +1134,7 @@
 
       <div class="flex flex-col md:flex-row items-center md:space-x-6">
         <div class="relative order-1 md:order-2">
-          <img src="../image/Group 9646.png" alt="">
+          <img src="./image/Group 9646.png" alt="">
         </div>
         <div class="mt-4 md:mt-0 order-2 md:order-1 text-center md:text-left">
           <h3 class="text-lg font-bold text-gray-800">DS: NGUYỄN THỊ KIM YẾN</h3>
@@ -897,7 +1171,7 @@
   <div class="container mx-auto max-w-screen-xl  px-5  ">
     <div class="flex flex-col md:flex-row justify-between items-center md:mt-10 ">
         <div>
-            <img src="../image/Rectangle 6461.png" alt="" class="w-full h-auto object-cover mt-6 md:mt-0">
+            <img src="./image/Rectangle 6461.png" alt="" class="w-full h-auto object-cover mt-6 md:mt-0">
   
         </div>
         <div class="bg-white p-6 ">
@@ -923,21 +1197,14 @@
                 turpis nunc mollis diam viverra dictum.</p>
         </div>
         <div class="flex sm:items-center">
-          <img src="../image/Rectangle 6463.png" alt="" class="hidden sm:block w-full h-auto object-cover -mt-6 md:-mt-5 pl-10">
+          <img src="./image/Rectangle 6463.png" alt="" class="hidden sm:block w-full h-auto object-cover -mt-6 md:-mt-5 pl-10">
       </div>
       
     </div>
-
-  
   </div>
   <div class="block md:hidden text-center">
-    <img src="../image/Rectangle 6463.png" alt="" class="inline-block w-full max-w-xs h-auto object-cover mt-4">
+    <img src="./image/Rectangle 6463.png" alt="" class="inline-block w-full max-w-xs h-auto object-cover mt-4">
 </div>
-
-
-
-      
-
 
   <section class="container mx-auto max-w-screen-xl pt-20  px-5 mx-auto bg-white p-6 rounded-lg flex flex-col md:flex-row items-center ">
     <div class="relative w-full md:w-1/2">
@@ -956,7 +1223,7 @@
           onclick="openPopup()"
         >
           <div class=" p-4">
-            <img src="../image/logos_youtube-icon.png" 
+            <img src="./image/logos_youtube-icon.png" 
                  alt="Play Button" class="">
           </div>
         </div>
@@ -975,7 +1242,7 @@
         class="text-white bg-gradient-to-b from-[#FFB469] to-[#E57709] w-32 px-2 py-2 mt-8 rounded-full text-sm font-semibold flex items-center justify-center gap-1 transition-all duration-300 hover:brightness-110 hover:scale-105"
       >
         <img
-          src="../image/Phone, Call.png"
+          src="./image/Phone, Call.png"
           alt="Phone Icon"
           class="w-4 h-4"
         />
@@ -1047,7 +1314,7 @@
           class="text-white bg-gradient-to-b from-[#FFB469] to-[#E57709] w-32 px-2 py-2 mt-8 rounded-full text-sm font-semibold flex items-center justify-center gap-1 transition-all duration-300 hover:brightness-110 hover:scale-105"
         >
           <img
-            src="../image/Phone, Call.png"
+            src="./image/Phone, Call.png"
             alt="Phone Icon"
             class="w-4 h-4"
           />
@@ -1058,7 +1325,7 @@
       <!-- Image Section -->
       <div class="flex justify-center">
         <img
-          src="../image/dvu.png"
+          src="./image/dvu.png"
           alt="Dịch vụ thai sản"
           class="max-w-full h-auto rounded-lg"
         />
@@ -1169,8 +1436,6 @@
         </div>
       </div>
     </section>
-    
- 
     </div>
 
      <!-- FOOTER  -->
